@@ -1,0 +1,51 @@
+body,html{background:snow;}
+*{margin: 0; padding: 0; border: none; text-decoration: none;}
+
+#header_topbar{ width: 100%; height: 30px;color: #666; margin-top: 10px;}
+#header_topbar .c_w1100{ width: 1100px; height: 30px; margin: 0 auto;}
+#header_topbar .c_w1100 .l{width: 200px;height: 200px; float: left;}
+#header_topbar .c_w1100 .l a{color: #666; margin-left: 10px;}
+#header_topbar .c_w1100 .r{ width: ; float: right;}
+#header_topbar .c_w1100 .r a{margin: 0 5px; color: #666;}
+#header_topbar .c_w1100 a:hover{color: deeppink;}
+
+
+
+#cart_banner{ width: 100%; font-size: 10px; }
+#cart_banner .w1004{ width: 1004px; height: 138px; margin: 0 auto;}
+#cart_banner .w1004 .logo{width: 546px; height: 100px; float: left;margin-left: -150px;}
+#cart_banner .w1004 .logo img{ width: 200px; height: 100px;}
+#cart_banner .w1004 .right{ width:454px ; height: 80px; float: left;}
+#cart_banner .w1004 .right .step{ width: 435px; height: 42px; background: url(../img/cart_step.png);margin-top: 45px;}
+#cart_banner .w1004 .step li { width: 135px; line-height: 42px; margin-left:10px; float: left; list-style: none;}
+#cart_banner .w1004 .step .current{}
+
+
+/*
+#cart_container{ width: 100%; min-height: 248px;border-bottom: 1px solid #CCCCCC;}
+#cart_container .empty{ width: 1000px; min-height: 248px; margin: 0 auto; background: #fff;}*/
+
+
+
+
+.Mybuycar{width: 100%;height:auto;margin: 0 15px;background:#FAFAFA ;}
+.Mybuycar .container{width: 1000px;height:auto;border: 2px solid #ccc;margin: 0 auto;}
+#cartTable{width: 1000px;height: auto;margin-bottom: 15px;}
+#cartTable img{width: 80px;height: 80px;margin-top: 10px; float: left; }
+#cartTable span{line-height: 20px; color: #333333;}
+#cartTable th{min-width: 120px;height: 60px;line-height: 35px;background: pink;text-align: center; font-weight: 18px;}
+#cartTable th{}
+#cartTable td{min-width: 120px;text-align: center;line-height: 30px;}
+#cartTable thead th{min-width: 100px;text-align: center;}
+#cartTable .price,.subtotal{color: red;}
+#cartTable .operation{font-weight: bolder;font-size: 16px;}
+#cartTable .operation .delete{cursor: pointer; font-size: 14px;}
+#cartTable .operation .delete:hover{cursor: pointer;color: #C689FF;}
+#cartTable .count .count-input{width: 50px;height: 20px; border: 1px solid #ccc;text-align: center;}
+#cartTable .count .reduce,.add{cursor: pointer; font-size: 18px;font-weight: bolder;}
+
+.foot{width:1000px;height: 60px;line-height: 60px;text-align: center; color: #000;}
+.foot .foot_tab{width: 1000px;background:  pink}
+#priceTotal{color: red;}
+#selectedTotal{color: red;font-weight: bolder;}
+

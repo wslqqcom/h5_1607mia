@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录蜜芽</title>
+		
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../assets/jquery_cookie.js"></script>
+		<script src="../js/login.js"></script>
+		<link type="text/css" rel="stylesheet" href="../css/login.css" />
+		
+		
+	</head>
+	<body>
+		
+		<div id="login_box">
+			
+			<div class="width">
+				<!--左边logo 图片-->
+				<div class="left">
+					<div class="login_mia1"><a href="#"><img src="../img/logo1.png" /></a></div>
+					<div class="login_mia2"><a href="#"> <img src="../img/newapp.jpg" /> </a></div>
+				</div>
+				
+				<!--右边验证登录-->
+				<div class="right">
+					<div class="login_top">
+						<span class="denglu"><strong>登录蜜芽</strong></span>
+						<span class="null">还没有蜜芽账号？</span>
+						<a href="register.html">30秒注册</a>
+					</div>
+					<!--手机验证登录-->
+					<div >
+						<form id="dl_form" action="../index.html">
+							<div class="input_box">
+								<input id="input_sjh" type="text" name="input_sjh" placeholder="手机号" />
+								<span class='state1'>请输入手机号</span>
+							</div>
+							<div class="input_box">
+								<input id="input_dxyz" type="password" name="input_dxyz" placeholder="密码"/>
+								<span class='state1'>请输入密码</span>
+							</div>
+						</form>
+					</div>
+					
+					<!--自动登录-->
+					<p> <input type="checkbox" />自动登录  <a> 忘记密码 </a> </p>
+					<div class="dl_btn_box">
+						<input type="button" value="登录" id="dl_btn" name="dl_btn" class="dl_btn"/>
+					</div>
+					
+					<div class="other">
+						使用以下账号登录：<img src="../img/weixin1.png" />
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+			<div class="footer_gray">
+				<p>Copyright ©2016 北京花旺在线商贸有限公司 Miyabaobei.com 保留一切权利。客服热线： 400-789-2000。京ICP证140430号 京ICP备14006215号</p>
+			</div>
+		
+	</body>
+</html>
+

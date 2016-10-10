@@ -1,0 +1,57 @@
+         /*轮播图*/
+.lbt{width：1366px;height: 480px;margin: 0 auto;}
+.lbt img{width:100%; height: 480px;}
+.lbt ul{width:100%;height: 480px;margin: 0 auto;}
+
+/*热卖品牌*/      
+#brand{width: 100%;/*height:33734px;*/background: #F9F9F9;} 
+#brands{width: 900px;height: 105px;line-height:105px;margin:10px 0 0 240px; float: right;background: #fff;}
+#brand .brands {float: left;}
+#brand .brands-l{float: left;margin:0 20px 0 20px;}
+#brand .brands-r li {float: left;}
+#brand .brands-r li img{display:block;width:94px;height:72px;margin: 10px 8px;}
+#brand .brand-bar{clear:both;width: 1100px; height: 191px; margin: 0 auto;background: green; }
+
+#brand .mod{ width: 1100px; height: 738px;margin:0 auto;clear: both; }
+#brand .mod h3{width: 1100px; height: 36px; font-size24px; color: #222; font-weight: bolder;}
+#brand .mod h3 span{font-size:14px;margin-left:20px;color: #9D9D9D;}
+
+       /*为你推荐*/
+ul{list-style:none;padding:0;margin:0;}
+#datalist{width: 1100px;height: 682px; margin: 0 auto;background: #fff;}
+#datalist ul{overflow:hidden;font-size:14px;}
+#datalist li{position:relative;float:left;width:219px;height:342px;border:1px solid #ddd;overflow:hidden;}
+#datalist li img{width:219px;height:169px ;}
+#datalist li img:hover{border: 1px solid khaki;}
+#datalist ul li .title{color:#000;line-height: 14px; margin:15px 10px;}
+#datalist ul li .title:hover{color:cornflowerblue;line-height: 14px;}
+#datalist ul li .price{ margin-top:20px;margin-left:80px ;color: #ddd;font-size:14px;text-decoration:line-through;}
+#datalist ul li .off{font-size:18px;color:red;font-weight: bolder;margin-top: -22px; position: absolute; left: 10px;}
+#datalist ul li .commentCount{color:gray;position: absolute;left: 10px;bottom: 50px;}
+#datalist ul li .button{width: 55px; height: 30px; background: red; border-radius: 20%; text-align: center;line-height: 30px; position: absolute;right: 10px; bottom: 10px; color: #fff;}
+#datalist ul li p{line-height:18px;}
+
+
+/*今日特卖*/
+#brand .mod1{ width: 1100px; height: 40px;margin:0 auto;clear: both; }
+#brand .mod1 h3{width: 1100px; height: 36px; font-size24px; color: #222; font-weight: bolder;}
+#brand .mod1 h3 span{font-size:14px;margin-left:20px;color: #C0C0C0;}
+
+
+/*今日特卖下的块*/
+#brand .layout{width: 1100px; height: 32300px;margin: 0 auto;}
+#brand .layout .block{width: 1100px; height: 364px;float: left;background:#FFF; border: 1px solid #CCCCCC;margin-top: 20px;}
+#brand .layout .block .bigpic{float: left;padding:7px 0 0 7px;}  /*左边大图片*/
+#brand .layout .block .rank	{width: 340px; height: 350px;float: right;padding-top: 20px;}	/*右边小图加文字信息	 3个 */
+#brand .layout .block .rank	a{display: block; width: 320px;height: 114px;padding-top:20px;margin:0 auto;overflow:hidden ;color: #737373;border-bottom: 1px dotted #CCCCCC;}/*	每个块的右边的每一个信息是一个a标签*/		
+#brand .layout .block .rank	a .rank_img img{width: 75px; height: 72px;float: left;border: 1px solid #ccc;margin-left: 20px;}	/*小图	*/		
+#brand .layout .block .rank	a .rank_img:hover img{border:1px solid deeppink ;}
+#brand .layout .block .rank	a .rank_r{width: 184px; height: 76px;line-height:28px;float: right;}	/*信息*/
+#brand .layout .block .rank	a .rank_r:hover{color: deeppink;}
+#brand .layout .block .rank	a .rank_r .price .new{color: red; font-size: 18px;}  /*新的价格/折后价*/
+#brand .layout .block .rank	a .rank_r .price .old{color: #D5D5D5; text-decoration: line-through;font-size: 12px;} /*原价*/
+
+
+
+
+		

@@ -1,0 +1,62 @@
+ 
+ 
+    /***************轮播图***********************/
+.lbt{width：1366px;height: 480px;margin: 0 auto;}
+.lbt img{width:100%; height: 480px;}
+.lbt ul{width:100%;height: 480px;margin: 0 auto;}
+
+
+/*****************品牌**************************/
+.box{width: 100%; height:460px;background: #F7F7F7; /*position: relative;*/margin: 0 auto;}
+.bigbox{width: 1000px; background:#fff;height:425px ; margin: 0 auto; /*position: relative;*/padding-top: 30px;}
+.bigbox a{color: #555555;}
+.bigbox a:hover{color: deeppink;}
+.bigbox span{float: left; font-size: 14px; font-weight: bolder; margin-left: 20px;}
+.bigbox .more{ float: right;width: 40px; height: 20px; background:#fff;border:1px solid #C0C0C0 ;/*position: absolute;*/top: 0;right: 0;}
+#Brandbox{width: 800px; /*height: 300px;*/ margin: 0 auto;}
+#Brandbox ul{width: 800px; }
+#Brandbox ul li{ width: 110px;height: 55px;float: left; border: 1px solid #CCCCCC; list-style: none;position: relative;}
+#Brandbox ul li img{ width: 100px; height: 50px;z-index: 1;}
+#Brandbox ul li:hover .zhezhao{display: block;}
+#Brandbox .zhezhao{width: 110px;height: 55px;position: absolute;color: white; background: deeppink;top: 0;left: 0;z-index: 2;text-align: center;line-height: 55px;display: none;}
+
+.for_age{width: 100%; height: 50px; line-height: 50px; border-top: 1px solid #DADADA; float: left;}
+.for_age span{padding-right: 20px;}
+.for_age a{margin: 0 10px;}
+.place{width: 100%; height: 50px; line-height: 50px; border-top: 1px solid #DADADA;margin: 0 auto;float: left;}
+.place span{padding-right: 45px;}
+.place a{margin: 0 10px;}
+
+
+/*****************   吸顶菜单   ******************/
+
+#xiding{ width: 100%; height:60px ; padding-top: 10px; background: #F7F7F7; clear: both;}
+#xiding .xiding_xd{ width: 1000px; height:50px ; line-height: 50px; margin: 0 auto; background: #fff;border: 1px solid #CCCCCC; }
+#xiding .xiding_xd span:hover{cursor: pointer;}
+#xiding .xiding_xd span{ margin: 0 10px;}
+#xiding .xiding_xd .paixu{ margin-left: 20px; }
+#xiding .xiding_xd .zonghe{width:100px; height: 30px;  border: 1px solid #CCCCCC; background: deeppink;color: #fff;}
+#xiding .xiding_xd .xiaoliang{width: 100px; height: 30px; border: 1px solid #CCCCCC;}
+#xiding .xiding_xd .p_price{width: 100px; height: 30px; border: 1px solid #CCCCCC;}
+#xiding .xiding_xd .gongji{margin-left: 500px;}
+#xiding .xiding_xd .gongji i{color: deeppink;}
+
+/****************************  列表   ******************************/
+.liebiao{width: 100%; height: 10425px; background: #F7F7F7; }
+.liebiao h3{ width: 1000px; height: 60px; margin: 0 auto;}
+#lieBiao{ width: 1000px; height: 10360px; margin: 0 auto; background: #fff; overflow: hidden;}
+
+
+#lieBiao ul{margin:0;padding:0;list-style: none; color: #E3E3E3;}
+#lieBiao li{float:left;margin:10px;padding:10px;width:230px;height:276px;border:1px solid #ddd;}
+#lieBiao li:hover{border: 1px solid deeppink;}
+#lieBiao li img{width:150px;}
+#lieBiao li .price span{margin-right:10px;color:#f00; font-weight: bolder; font-size: 18px;cursor: pointer;}
+#lieBiao li p{width:100%;height: 40px; line-height: 18px; margin-top: 20px;}
+#lieBiao li .title:hover{color: deeppink; cursor: pointer;}
+#lieBiao li .title{font-weight: bolder; color: #000000;}
+
+
+
+
+

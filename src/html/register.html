@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蜜芽注册页面</title>
+		
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../js/jquery.validate.js"></script>
+		<script src="../assets/jquery_cookie.js"></script>
+		<script src="../js/register.js"></script>
+		<link type="text/css" rel="stylesheet" href="../css/register.css" />
+		
+		<!--<script>
+			
+			
+			$(function(){
+				// 表单验证插件
+				$('.biaodan').validate({
+
+					// 设置验证规则
+					rules:{
+						user:{required:true,rangelength:[6,12]},
+						email:{required:true,email:true},
+						age:{number:true}
+					},
+
+					// 设置验证信息
+					messages:{
+						user:{required:'大侠，留下你的大名'},
+						age:{number:'你的年龄不合法'}
+					}
+				})
+			});
+			
+			
+		</script>-->
+		
+		
+		
+		
+	</head>
+	<body>
+	<div class="large_box">	
+		<div class="box">
+			<!--页面左边logo-->
+			<div class="register_left">
+				<div class="logo_mia"> <a href="#"><img src="../img/logo1.png" /></a> </div>
+				<div class="logo_app"> <a href="#"> <img src="../img/register1.png" /></a></div>
+			</div>
+			
+			<!--页面右边-->
+			<div class="register_right">
+				<div class="right_top">
+					<span class="l">注册蜜芽</span>
+					<span class="r">
+						<span class="yiyou">已有蜜芽账号？</span>
+						<a href="login.html"> 登录</a>
+					</span>
+				</div>
+				<!--注册表单-->
+				<div class="biaodan">
+					<form id="zhuce_form" action="login.html">
+						<div class="input_box">
+							<input id="phone" class="form-control" type="text" name="phone" placeholder="手机号" />
+							<span class='state1'>请输入手机号</span>
+						</div>
+						<div class="input_box">
+							<input id="yzm" class="form-control" type="text" name="yzm" placeholder="输入验证码" />
+							<span class='state1'>请输入验证码</span>
+							<span  class="yzm_box"></span>
+							<span class="yzmsx">看不清</span>
+						</div>
+						<!--<div class="input_box">
+							<input type="text" id="dxyzm" class="form-control" name="dxyzm" placeholder="获取短信验证码" />
+							<span class='state1'>请输入短信验证码</span>
+							<div class="dxyzm_box"><span>获取短信验证码</span> </div>
+						</div>-->
+						<div class="input_box">
+							<input id="password" class="form-control" name="password" type="password" placeholder="密码" />
+							<span class='state1'>请输入密码</span>
+						</div>
+						<div class="input_box">
+							<input id="password_2" class="form-control" name="password_2" type="password" placeholder="确认密码" />
+							<span class='state1'>确认密码</span>
+						</div>
+						<div class="button_box">
+							<input type="checkbox" />我已阅读并接受 <span>《蜜芽服务条款》</span>
+							<br />
+							<br />
+							<br />
+							<button class="btn" id="zhuce_btn"><strong>注册</strong></button>
+						</div>
+						
+				</form>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footer_gray">
+			<p>Copyright ©2016 北京花旺在线商贸有限公司 Miyabaobei.com 保留一切权利。客服热线： 400-789-2000。京ICP证140430号 京ICP备14006215号</p>
+		</div>
+		
+	</div>	
+		
+		
+	</body>
+</html>

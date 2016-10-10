@@ -1,0 +1,110 @@
+
+
+*{margin: 0;padding: 0;border: none; text-decoration: none;}
+body{font:14px '微软雅黑'; position: relative;}
+ul,li{text-decoration: none;list-style: none;}
+
+/***********************************    header    头部   **********************************/
+
+#header{width: 100%; height:207px;text-decoration: none;text-align: none;}
+
+#header #header_top{width: 100%;height: 30px;background: #f2f2f2;line-height: 30px;}
+#header #header_top .header-top{width: 1100px;height: 30px;margin-left: -15px;margin: 0 auto;}
+#header #header_top .header-top .left{ width: 80px; height:30px;float: left;}/*手机蜜芽*/
+#header #header_top .header-top .left a{line-height: 30px;color: deeppink;}
+#header #header_top .header-top .right{width: 335px;height: 30px;float: right;}
+#header #header_top .header-top .right a:hover{color: deeppink;}
+#header #header_top .header-top .right a{line-height: 30px; color: #777777;} /*注册 登陆 帮助中心*/
+#header #header_top .header-top .right .welcome{margin: 0 10px;}  /*你好，欢迎来到蜜芽！*/
+
+#header .container{width: 1100px;height: 150px; }
+#header .container .container-middle{width: 1100px;height: 110px;margin-top: 27px;margin-left:-15px;}
+#header .container .container-middle .logo{width: 230px; height: 70px; float: left;}
+#header .container .container-middle .right{ width: 677px; height: 90px;float: right;}
+#header .container .container-middle .right .func-search{width: 475px;height: 34px;line-height: 34px;margin-top: 20px;}
+#header .container .container-middle .right .func-search .hot a{color: #000000;margin: 0 5px;}
+#header .container .container-middle .right .func-search #keyword{width:375px;height:34px;color: #D5D5D5;border: 2px solid deeppink;}
+#header .container .container-middle .right .func-search #search_button{width:90px;height:34px;background: deeppink;color: #fff;margin:2px 0 0 -5px;/*border: 1px solid deeppink;*/}
+#header .container .container-middle .right .car{width: 144px; height: 34px;float:right;border: 2px solid deeppink;margin: -34px 20px 0 0;}
+#header .container .container-middle .right .car a{height: 34px; line-height: 34px;text-align: center;color: #000;}
+#header .container .container-middle .right .car span{margin-right: 30px;}
+
+/*导航栏*/
+#header #header_nav{width: 100%; height: 50px;background: deeppink;margin-top: 7px;}
+#header #header_nav .nav{width: 1100px; height:50px;margin:0 auto;}
+#header #header_nav .nav ul{width: 1100px;}
+#header #header_nav .nav ul li{float: left;width: 95px;height: 50px;background:deeppink ;line-height: 50px;text-align: center;}
+#header #header_nav .nav ul li:hover{background:#C7254E;}
+#header #header_nav .nav ul li a{font-size: 16px;color:#fff;}
+
+
+#header #header_nav .nav .nav_1 .lastLi{width: 124px;position: relative;}
+#header #header_nav .nav .nav_1 .lastLi span{transition: 0.2s;display: inline-block;}
+#header #header_nav .nav .nav_1 .lastLi:hover span{transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+#header #header_nav .nav_1 #list{width:124px;position: absolute;left: 0;top:50px;z-index: 10;display: none;}
+#header #header_nav .nav_1 #list li{width: 124px;height: 50px;line-height: 50px;text-align: center;border-bottom: 1px dashed #ccc;}
+
+
+
+/*************************************    底部    **********************************************/
+
+#footer{width: 1349px; height:492px; background: #fff;}
+/*底部  上    可信赖等六个 图标*/
+#footer .footer_top{width: 100%; height: 139px; border-bottom: 1px solid #E5E5E5;}
+#footer .footer_top .footer_top_width{width: 1100px;height: 139px; margin: 0 auto;}
+#footer .footer_top .footer_top_width ul{width: 1100px; height: 139px; margin: 0 auto;}
+#footer .footer_top .footer_top_width ul li{color: #9D9D9D; width: 167px; float: left; text-align: center; margin:20px 8px;}
+#footer .footer_top .footer_top_width ul li a{ display: block;color: #9D9D9D; width: 167px; height: 102px; }
+#footer .footer_top .footer_top_width ul li a img{width: 70px; height: 60px;}
+#footer .footer_top .footer_top_width ul li a p{color: #000000;width:167px; height: 21px;margin: 0 auto;}
+
+/*底部的中间部分*/
+#footer .footer_mid{ width: 100%; height: 187px;font-size: 12px; margin-top: 15px;}
+#footer .footer_mid .footer_mid_width{ width: 1000px; height: 187px;margin: 0 auto;border-bottom: 1px solid #ccc; }
+        /*底部中间部分    左 侧   帮助链接*/
+#footer .footer_mid .footer_mid_width .l{width: 728px; height: 187px; float: left;}
+#footer .footer_mid .footer_mid_width .l ul{ width: 132px; height: 135px; float: left; margin: 0 auto;}
+#footer .footer_mid .footer_mid_width .l ul li{height: 26px; line-height: 26px;}
+#footer .footer_mid .footer_mid_width .l ul li:hover{color:#5BC0DE ; cursor: pointer;}
+#footer .footer_mid .footer_mid_width .l ul .strong{font-weight: bolder; font-size: 14px;}
+#footer .footer_mid .footer_mid_width .l .last_ul{width: 200px; height: 161px;}
+         /* 底部中间   右侧      关注蜜芽二维码  */
+#footer .footer_mid .footer_mid_width .r{width: 168px; height: 187px; float: right; padding-left: 5px;}
+#footer .footer_mid .footer_mid_width .r ul{width: 168px; height: 187px; border-left: 1px solid #ccc;} 
+#footer .footer_mid .footer_mid_width .r ul li{float: left;width: 76px; margin-left: 7px;}
+#footer .footer_mid .footer_mid_width .r .strong{width: 185px; height: 34px; font-size: 14px;font-weight: bolder;}
+#footer .footer_mid .footer_mid_width .r #ohover{position: relative;}
+#footer .footer_mid .footer_mid_width .r #toopli{position: absolute;left: -190px;top:-54px;display: none;}
+
+/* 底部  bottom*/
+#footer .bottom{ width: 100%; height: 166px; margin: 0 auto;color: #9D9D9D;}
+#footer .bottom .bottom_width{width: 1100px; height: 166px; padding-top: 10px;text-align: center; margin: 0 auto;}
+#footer .bottom .bottom_width p{line-height: 28px; margin-top: 10px;}
+#footer .bottom .bottom_width p a{color: #222222;padding: 0 10px;}
+#footer .bottom .bottom_width p span{margin: 0 10px;}
+#footer .bottom .bottom_width p img{width:105px; height:30.28px;}
+
+
+/*左侧二维码*/
+#fixeLft{ width:100px; height: 248px; left: 0px; top:250px;position: fixed;display: none;}
+#fixeLft img{width: 100px; /*height: 248px;*/}
+
+/*右侧*/
+#fixeRight{ width: 54px; height: 252px; right: 50px;top:250px;position: fixed; display: none;border: 1px solid #CCCCCC;font-size: 12px;}
+#fixeRight a{color: #666;}
+#fixeRight ul li{width: 54px; height: 56px; text-align: center;border-bottom: 1px solid #CCCCCC;padding-top: 5px;}
+#fixeRight ul li:hover{background: #ccc;}
+#fixeRight ul li img{width: 23px; height: 23px;}
+#fixeRight .tel{position: relative;}
+/*弹出的号码*/
+#fixeRight .tel #tel{position: absolute;top: 0; left: -150px; display: none;}
+#fixeRight .tel #tel img{width: 157px; height: 45px;}
+/*弹出的微信二维码*/
+#fixeRight .weixin{position: relative;}
+#fixeRight .weixin_1{position: absolute; left: -157px; bottom: 0; display: none;}
+#fixeRight .weixin_1 img{width:157px; height:193px}
+#fixeRight .top img{width: 54px; height: 28px;}/*回到顶部*/
+
+
+
+

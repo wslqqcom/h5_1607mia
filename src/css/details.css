@@ -1,0 +1,117 @@
+*{margin: 0; padding: 0; list-style: none; border: none;}
+/**************面包屑********************/
+.mianbaoxie{ background: #F5F5F5; }
+.mianbaoxie .breadcrumb { width: 1100px; margin: 0 auto; }
+.mianbaoxie .breadcrumb span{color: #357EBD;}
+.mianbaoxie .breadcrumb span:hover{color:#555555;}
+
+
+/**************************    详细信息      *****************************/
+
+.XQ{width: 100%; min-height: 610px;}
+.XQ_box{width: 1100px; height: 610px; margin: 0 auto; margin-top: 20px;}
+
+/*********** 左 ************/
+.XQ .XQ_left{width: 410px; height: 410px; float: left;position: relative; }
+.XQ_left_title{width: 60px;height: 60px;line-height: 60px;text-align: center;background: #A04EFC;color: #fff;position: absolute;left: 0;top: 0;}
+.XQ .XQ_left .XQ_imgbox { width: 300px; height: 300px; margin-top: 60px;}
+.XQ .XQ_left .XQ_imgbox  img{width: 300px; height: 300px;}
+/*********** 右 ***********/
+.XQ .XQ_right{ width:650px; min-height: 564px;float: right; font-size: 16px;}
+.XQ .XQ_right .s1{font-size: 14px; color: #9D9D9D;}
+.XQ .XQ_right .r_1{ width: 650px; height: 50px; line-height: 50px; font-size: 14px; color: #9D9D9D;}
+.XQ .XQ_right .r_1 a img{float: right; margin: 0 auto; margin-top: 10px; margin-right: 10px;} /*微信 新浪*/
+
+/*****价格盒子****/
+.XQ .XQ_right .price_box{width: 650px; height: 100px; background:#FFF9FD;}
+.XQ .XQ_right  p{line-height: 30px;padding-left: 20px;}
+.XQ .XQ_right .price_box p{line-height: 50px;}
+.XQ .XQ_right .price_box .pbox_price{color: red;}/*价格*/
+.XQ .XQ_right .price_box .manjian{background: orangered; color: #fff;}
+
+/*****套装********/
+.XQ .XQ_right .taozhuang{ width: 690px; height: 80px;padding-left: 20px;}
+.XQ .XQ_right .taozhuang .taozhuang_title{margin-top: 20px;display: block;float: left;}
+.XQ .XQ_right .taozhuang .tz_box { width: 60px; height: 60px; border: 2px solid deeppink; cursor: pointer;margin-left: 70px;}
+.XQ .XQ_right .taozhuang .tz_box:hover a{color: deeppink;}
+.XQ .XQ_right .taozhuang ul a{color: #333333; font-size: 14px; line-height: 30px;}
+
+
+/*****可选*****/
+.XQ_right .kexuan{ width: 690px; height: 80px;padding-left: 20px;}
+.XQ .XQ_right .kexuan .kexuan_title{margin-top: 20px;display: block;float: left;}
+.XQ .XQ_right .kexuan .kx_box { width: 60px; height: 60px; border: 1px solid #ddd; cursor: pointer;margin-left: 70px;}
+
+
+/*数量*/
+.xq_count_box{width:690px;height: 80px;}
+.xq_count{width: 70px;height: 60px;margin-left: 80px;}
+.xq_count_title{padding-left: 20px;margin-top: 20px;display: block;float: left;}
+.xq_count #xq_count{width: 30px;height: 30px;margin-top: 15px;float: left;background: #ccc;}
+.xq_count .xq_reduce{cursor: pointer;width:15px ;height: 30px;display: block;float: left;background: #ccc;margin-top: 15px;margin-right: 2px;color: #fff;}
+.xq_count .xq_add{cursor: pointer;width:15px ;height: 30px;display: block;float: left;background: #ccc;margin-top: 15px;margin-left: 2px;color: #fff;}
+/*评分*/
+
+.ping{width: 600px;height: 40px;line-height: 40px;}
+.ping .ping_title{width: 60px;height: 40px;margin-left: 20px;float: left;}
+.ping .ping_box{width: 80px;height: 12px;margin-top: 10px;float:left;background:url(../img/start.png) repeat-x;}
+.ping span{display:block;float: left;margin-left: 15px;}
+/*加入购物车按钮部分*/
+.XQ_addcar{width: 650px;height: 62px;}
+.XQ_addcar .addbuycaar{width: 237px; height: 62px;padding-top: 15px;text-align: center;color: #fff;background: deeppink;float: left;cursor: pointer;transition: 0.5s;}
+.XQ_addcar .addbuycaar:hover{border: 1px solid red;transform: scale(0.9);-webkit-transform: scale(0.9);}
+.XQ_addcar .shoucang{width: 110px;height: 60px;margin-left: 15px;float: left;cursor: pointer;transition: 0.5s;}
+.XQ_addcar .shoucang:hover{transform: scale(0.9);-webkit-transform: scale(0.9);}
+
+.XQ_baozheng{width: 447px;height: 27px;margin-top: 10px;font-size: 12px;list-style: inherit;}
+.XQ_baozheng li{float: left;margin: 0 10px;}
+
+
+
+#XQ_li{ width: 100%; height:220px ; font-size: 10px;}
+#XQ_li ul{ width: 900px; height: 200px; margin: 0 auto; margin-top: 20px;}
+#XQ_li ul li{ width: 120px; height: 200px; float: left; margin-right: 15px;}
+#XQ_li ul li p:hover{color: deeppink;}
+#XQ_li ul li img{width: 120px; height: 120px; border: 1px solid #CCCCCC; padding: 9px;}
+#XQ_li ul li span{color: red;}
+
+/*左*/
+.XQ_xqbox{width: 100%; height:7400px;margin-top: 10px;}
+.XQ_xq{width: 1000px; margin: 0 auto;}
+.XQ_xq .XQ_xql{ width: 200px; float: left; border: 1px solid #ccc ; }
+.XQ_xq .XQ_xql .p{height: 50px; width:200px ; font-size: 18px; color: deeppink; }
+.XQ_xq .XQ_xql ul{ width:200px ;}
+.XQ_xq .XQ_xql ul li{height: 100px; width:200px ; border-bottom: 1px solid #E1EDF7; padding-top: 10px; margin: 0 auto;}
+.XQ_xq .XQ_xql .l_p p{font-size: 10px;}
+.XQ_xq .XQ_xql .l_p{width: 120px;float: left; margin: -80px 0 0 80px;}
+.XQ_xq .XQ_xql ul li img{width: 80px; height: 80px;float: left;}
+.XQ_xq .XQ_xql ul li span{color: red; float: left;font-size: 10px; margin-top: 10px;}
+
+/*右*/
+.XQ_xq .XQ_xqr{ width: 770px; padding-left: 50px; float: left;}
+/*吸顶菜单*/
+.XQ_xq .XQ_xqr .r_xd{ width: 770px; height: 50px; background: deeppink;}
+.XQ_xq .XQ_xqr .r_xd ul{width: 770px; height: 50px;}
+.XQ_xq .XQ_xqr .r_xd ul li{ width: 150px; height: 50px; float: left; line-height: 50px;text-align: center; color: #fff;}
+/*.XQ_xq .XQ_xqr .r_xd ul li:hover{background: #DC143C; color: white;}*/
+.XQ_xq .XQ_xqr .r_xd ul li a{color: #fff;}
+.XQ_xq .XQ_xqr .r_xd .spxq{background: #DC143C; width: 100px;}
+.XQ_xq .XQ_xqr .xq_pic{width: 770px;}
+
+.XQ_XQ{width: 770px; height: 7350px; border: 1px solid #DADADA; margin-top: 20px;}
+/*详细*/
+.xiangxi{width: 770px;/*height: 200px;*/}
+.xiangxi ul{width: 770px;/*height: 180px;*/ margin-left: 10px; margin-top: 20px; position: relative;}
+.xiangxi ul li{width: 380px; height: 30px; float: left;}
+.xiangxi ul li span{position: absolute;left: 80px;}
+.xiangxi .ss{position: absolute;left: 460px;}
+.xiangxi .up_down{ width:770px ; height;40px;color: #2191C0; cursor: pointer; margin-left: 10px; float: left;}/*收起*/
+
+
+/*图片*/
+.XQ_xq .XQ_xqr .xq_pic ul li{ width: 770px; clear: both;}
+.XQ_xq .XQ_xqr .xq_pic ul li img{ width: 760px; margin-left: 10px;}
+
+
+
+.bottom{clear: both;} /*若是不清除浮动 底部的ul则会浮动到上方图片右侧*/

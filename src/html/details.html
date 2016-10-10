@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蜜芽——详情页</title>
+		
+		
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../assets/bootstrap.min.js"></script>
+		<script src="../assets/jquery-ui.min.js"></script>
+		<script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="../assets/jquery.mlens-1.0.min.js"></script>
+		<script src="../assets/jquery_cookie.js"></script>
+		<script src="../js/details.js"></script>
+		<script src="../js/mybuycart.js"></script>
+		<link type="text/css" rel="stylesheet" href="../assets/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="../assets/jquery-ui.min.css" />
+		<link type="text/css" rel="stylesheet" href="../css/zzsc.css" />
+		<link type="text/css" rel="stylesheet" href="../css/common.css" />
+		<link type="text/css" rel="stylesheet" href="../css/list.css" />
+		<link type="text/css" rel="stylesheet" href="../css/details.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/fangdajing.css" />
+		<script src="../js/list.js"></script>
+		
+		<script>
+			$(document).ready(function()
+			{
+			    $("#green_monster").mlens(
+			    {
+			        imgSrc: $("#green_monster").attr("data-big"),   // path of the hi-res version of the image
+			        lensShape: "square",                // shape of the lens (circle or square)
+			        lensSize: 180,                  // size of the lens (in px)
+			        borderSize: 4,                  // size of the lens border (in px)
+			        borderColor: "#deeppink",                // color of the lens border (#hex)
+			        borderRadius: 0                 // border radius (optional, only if the shape is square)
+			    });
+			});
+		</script>
+		
+		
+	</head>
+	<body>
+		
+		
+		<div id="header">
+		
+			<div id="header_top">
+				
+				<div class="header-top">
+					<div class="left">
+						<a href="#">
+							<img src="../css/img/phone.jpg" />&nbsp;&nbsp;手机蜜芽
+						</a>
+					</div>
+					<div class="right">
+						<span class="welcome">你好，欢迎来到蜜芽！</span>
+						<a href="html/login.html" title="登录">登录</a>
+						<em>|</em>
+						<a href="html/register.html" title="免费注册">免费注册</a>&nbsp;&nbsp;
+						<a href="#" title="帮助中心">帮助中心</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="container">
+				
+				<!--搜索框部分-->
+				<div class="container-middle">
+					<div class="l logo"><img src="../img/logo.jpg" width="230" height="70"/></div>
+					<div class="right">
+						<div class="func-search ui-widget">
+							<input id="keyword" class="tags" type="text" value="膳魔师" />
+							<input id="search_button" type="button" value="搜索">
+							<p class="hot">
+                            	<a  href="#" style="color: red;" target="_blank">乐乐趣</a>|
+                                <a  href="#" target="_blank">伯斯马丁</a>|
+                                <a  href="#" target="_blank">资生堂</a>|
+                                <a  href="#" target="_blank">嘉宝泡芙</a>|
+                                <a  href="#" target="_blank">耳温枪</a>
+                            </p>
+						</div>
+						<div class="car">
+							<a href="#">
+								<span><img src="../css/img/car.jpg" height="30" style="margin-top: -6px;"/></span>
+								购物车
+							</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="warpper">
+				
+				<div class="menu">
+			    	<ul>
+			            <li><a href="#" style="background: crimson;">首页</a><span class="hot"></span></li>
+			            <li><a href="#">奶粉</a></li>
+			            <li><a href="#">纸尿裤</a></li>
+			            <li class="sec_box">
+			            	<a href="#">正品保证<span>&and;</span></a>
+			            	
+			            	<ul class="sec_nav">
+			            		<li>正品保证</li>
+			            		<li>退货政策</li>
+			            		<li>帮助中心</li>
+			            	</ul>
+			            </li>
+			           
+			        </ul>
+			    </div>
+			    
+			    <div id="nav">
+			    	<div class="mod_cate_hd">全部商品分类</div>
+			    	<ul class="tit">
+			    		<!--一-->
+			        	<li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a  class="hot_sub" href="#">奶粉 </a><a  class="hot_sub" href="#">纸尿裤</a></h2>
+			                <p class="mod_cate_r"><a href="#">护理</a><a href="http://sc.chinaz.com/">婴儿奶粉</a><a  href="">特配奶粉</a><a href="http://sc.chinaz.com/">拉拉裤</a><a href="http://sc.chinaz.com/">宝宝湿巾</a><a href="http://sc.chinaz.com/">德国爱他美</a></p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>奶粉专区</dt>
+			                            <dd>
+			                            	<a href="http://sc.chinaz.com/">全部</a><a href="http://sc.chinaz.com/">婴儿奶粉</a>
+			                                <i class="mod_subcate_line"></i>
+			                                <a href="http://sc.chinaz.com/">成长奶粉</a><a href="http://sc.chinaz.com/">洋奶粉</a><a href="http://sc.chinaz.com/">特配奶粉</a><a href="http://sc.chinaz.com/">妈妈奶粉</a><a href="http://sc.chinaz.com/">成人奶粉</a><a href="http://sc.chinaz.com/">老人奶粉</a><a href="http://sc.chinaz.com/">女人奶粉</a>
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>全球纸尿裤大牌</dt>
+			                            <dd>
+			                            	<a href="#/">尤妮佳</a><a href="#" class="org">花王</a><a href="#/">GOON大王天使</a><a href="#/">GOON大王维E</a><a href="#">Pampers帮宝适 </a><a href="#"> Singapore Huggies新加坡好奇</a>
+			                            	<a href="#">Pampers care帮宝适棉柔</a><a href="#">Huggies Gold好奇金装</a><a href="#">Huggies platinum 好奇铂金装</a><a href="#"> Mamypoko 妈咪宝贝   Libero丽贝乐</a>
+			                            	<a href="#">Bell Baby Happy 贝拉宝贝</a><a href="#"> BioFitiess 爱婴舒坦    BAMBO班博</a><a href="#">Pampers care帮宝适棉柔</a><a href="#">Huggies Gold好奇金装</a><a href="#">Huggies platinum 好奇铂金装</a>
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>全球奶粉大牌</dt>
+			                            <dd>
+			                            	<a href="#" class="org">德国爱他美</a><a href="#" class="org">德国Hipp</a><a href="#">德国hello</a><a href="#">荷兰Nutrilon</a><a href="http://www.miyabaobei.com/s/cat12_b265_tid208.html" target="_blank" >英国Cow&Gate</a>
+			                                <a href="http://www.miyabaobei.com/s/cat12_b517_tid204.html" target="_blank" class="org">澳洲Aptamil</a><a href="http://www.miyabaobei.com/s/cat12_b1814_tid205.html" target="_blank" class="org">德国holle</a>
+			                                <a href="http://www.miyabaobei.com/s/cat12_b267_tid207.html" target="_blank" >英国Aptamil</a><a href="http://www.miyabaobei.com/s/cat12_b524_tid213.html" target="_blank" class="org">授权行货惠氏启赋</a>
+			                                <a href="http://www.miyabaobei.com/s/cat12_b1800_tid670.html" target="_blank" >港版美赞臣</a><a href="#">德国hello</a><a href="#">荷兰Nutrilon</a><a href="http://www.miyabaobei.com/s/cat12_b265_tid208.html" target="_blank" >英国Cow&Gate</a>
+			                                <a href="http://www.miyabaobei.com/s/cat12_b526_tid210.html" target="_blank" >授权行货爱他美</a>
+			                                <a href="http://www.miyabaobei.com/s/cat12_b173_tid211.html" target="_blank" >授权行货诺优能</a><a href="http://www.mia.com/formulasList/b1898.html" target="_blank" >授权行货 喜宝</a>
+			                                <a href="http://www.miyabaobei.com/s/cat12_b243_tid516.html" target="_blank" class="org">美国MeadJohnson</a>
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>屁屁护理</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat18_tid694.html" target="_blank" >纸尿裤</a><a href="http://www.mia.com/s/cat16_tid692.html" target="_blank" class="hot">拉拉裤</a>
+			                                <a href="http://www.mia.com/s/cat25_tid696.html" target="_blank" class="org">隔尿垫/布尿裤</a><a href="http://www.mia.com/s/cat23_tid695.html" target="_blank" class="hot">宝宝湿巾</a>
+			                            </dd>
+			                        </dl>
+			                    	
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/1357_brand_logo_img1459491024.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1_brand_logo_img1459490969.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/157_brand_logo_img1461150832.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/192_brand_logo_img1467099328.jpg" /></a></li>
+				                             <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brands-6.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			           
+			           
+			            <!--二-->
+			            <li class="mod_cate ">
+			            	<h2><i class="arrow_dot fr"></i><a class="hot_sub"  href="#">辅食 </a><a  class="hot_sub" href="#">喂养</a><a class="hot_sub" href="#">洗护</a></h2>
+			                <p class="mod_cate_r"><a href="/search/s?cat=277" target="_blank">米粉</a><a href="/search/s?cat=3" target="_blank">果泥/肉泥</a><a href="/search/s?cat=360" target="_blank">溶豆/泡芙</a><a href="/search/s?cat=6" target="_blank">磨牙饼干</a><a href="/search/s?cat=157" target="_blank">鱼油/DHA</a><a href="/search/s?cat=29" target="_blank">钙铁锌</a>   
+			                <div class="mod_subcate ">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>宝宝食品</dt>
+			                            <dd>
+			                            	<!--<a href="http://sc.chinaz.com/">全部</a><a href="http://sc.chinaz.com/">婴儿奶粉</a>-->
+			                                <i class="mod_subcate_line"></i>
+			                               	<a href="http://www.mia.com/s/cat10_tid1002.html" target="_blank" >果汁/饮品</a>
+			                                <a href="http://www.mia.com/s/cat11_tid1003.html" target="_blank" >糖果/零食</a>
+			                                <a href="http://www.mia.com/s/cat2_tid1004.html" target="_blank" >面条/粥</a>
+			                                <a href="http://www.mia.com/s/cat277_tid1005.html" target="_blank" class="org">米粉</a>
+			                                <a href="http://www.mia.com/s/cat3_tid1006.html" target="_blank" class="org">果泥/肉泥</a>
+			                                <a href="http://www.mia.com/s/cat360_tid1007.html" target="_blank" class="org">溶豆/泡芙</a>
+			                                <a href="http://www.mia.com/s/cat4_tid1008.html" target="_blank" >海苔/肉松</a>
+			                                <a href="http://www.mia.com/s/cat5_tid1009.html" target="_blank" >鱼肠/肉肠</a>
+			                                <a href="http://www.mia.com/s/cat6_tid1010.html" target="_blank" class="org">磨牙饼干</a>
+			                                <a href="http://www.mia.com/s/cat7_tid1011.html" target="_blank" >奶酪/奶制品</a>
+			                                <a href="http://www.mia.com/s/cat9_tid1012.html" target="_blank" >食用油/调味品</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>宝宝营养</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat157_tid721.html" target="_blank" class="org">鱼油/DHA</a>
+				                            <a href="http://www.mia.com/s/cat29_tid722.html" target="_blank" class="org">钙铁锌</a>
+				                            <a href="http://www.mia.com/s/cat31_tid723.html" target="_blank" >VD/维生素</a>
+				                            <a href="http://www.mia.com/s/cat32_tid724.html" target="_blank" >益生菌</a>
+				                            <a href="http://www.mia.com/s/cat33_tid725.html" target="_blank" >免疫力</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>宝宝用品</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat154_tid1039.html" target="_blank" >日用护理</a>
+			                                <a href="http://www.mia.com/s/cat60_tid1042.html" target="_blank" class="org">理发/梳发</a>
+			                                <a  class="org" href="http://www.mia.com/s/cat268_tid1041.html" target="_blank" >唇部护理</a>
+			                                <a href="http://www.mia.com/s/cat149_tid1037.html" target="_blank" >浴盆及洗澡周边</a>
+			                                <a href="http://www.mia.com/s/cat150_tid1038.html" target="_blank" class="org">医护/退热</a>
+			                                <a  class="org" href="http://www.mia.com/s/cat26_tid1040.html" target="_blank" >坐便器</a>
+			                                <a href="http://www.mia.com/s/cat61_tid1043.html" target="_blank" class="org">口腔护理</a>
+			                                <a href="http://www.mia.com/s/cat62_tid1044.html" target="_blank" >鼻腔护理</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>喂养用品</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat44_tid992.html" target="_blank"   class="org" >奶瓶</a>
+			                                <a href="http://www.mia.com/s/cat45_tid993.html" target="_blank" >奶嘴/安抚奶嘴</a>
+			                                <a href="http://www.mia.com/s/cat46_tid994.html" target="_blank" >碗碟餐具</a>
+			                                <a href="http://www.mia.com/s/cat47_tid995.html" target="_blank"   class="org" >食物研磨及制作</a>
+			                                <a href="http://www.mia.com/s/cat48_tid996.html" target="_blank" >食物储存</a>
+			                                <a href="http://www.mia.com/s/cat49_tid997.html" target="_blank" >学饮杯/水壶</a>
+			                                <a href="http://www.mia.com/s/cat50_tid998.html" target="_blank" >消毒/暖奶/加热</a>
+			                                <a href="http://www.mia.com/s/cat51_tid999.html" target="_blank"   class="org" >围兜/防溅衣</a>
+			                                <a href="http://www.mia.com/s/cat52_tid1000.html" target="_blank" >辅助配件</a>
+			                                <a href="http://www.mia.com/s/cat53_tid1001.html" target="_blank"  class="org" >餐椅</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>宝宝洗护</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat55_tid511.html" target="_blank" >套装/礼盒</a>
+			                                <a href="http://www.mia.com/s/cat56_tid512.html" target="_blank" class="org" >洗发沐浴</a>
+			                                <a href="http://www.mia.com/s/cat57_tid513.html" target="_blank" >乳液/抚触油</a>
+			                                <a href="http://www.mia.com/s/cat58_tid514.html" target="_blank" >面霜/万用霜</a>
+			                                <a href="http://www.mia.com/s/cat59_tid515.html" target="_blank" >爽身/防晒</a>
+			                                <a href="http://www.mia.com/s/cat268_tid510.html" target="_blank" class="org" >唇部护理</a>
+			                                <a href="http://www.mia.com/s/cat152_tid508.html" target="_blank" >驱蚊/驱虫</a>
+			                                <a href="http://www.mia.com/s/cat24_tid509.html" target="_blank" >屁屁霜/护臀霜</a>
+			                                <a href="http://www.mia.com/s/cat149_tid663.html" target="_blank" class="org" >洗澡用品</a>
+			                                <a href="http://www.mia.com/s/cat61_tid668.html" target="_blank" class="org" >口腔护理</a>
+			                                <a href="http://www.mia.com/s/cat62_tid669.html" target="_blank" >鼻腔护理</a>
+			                                <a class="org"  href="http://www.mia.com/s/cat60_tid667.html" target="_blank" >理发/梳发</a>
+			                                <a href="http://www.mia.com/s/cat26_tid666.html" target="_blank" >如厕训练</a>
+			                                <a href="http://www.mia.com/s/cat150_tid664.html" target="_blank" >医护用品</a>
+			                                <a href="http://www.mia.com/s/cat154_tid665.html" target="_blank" >日用配件</a>
+			
+			
+			                            </dd>
+			                        </dl>
+			                        
+			                        
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    
+			                    
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+			           						<li><a href="http://sc.chinaz.com/"><img src="../img/1357_brand_logo_img1459491024.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1_brand_logo_img1459490969.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/157_brand_logo_img1461150832.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			            
+			            <!--三-->
+			            <li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a class="hot_sub" href="#">孕妈用品</a></h2>
+			                <p class="mod_cate_r"> <a href="/search/s?cat=128" target="_blank">孕妇装/孕妇裙</a><a href="/search/s?cat=260" target="_blank">待产/月子用品</a><a href="/search/s?cat=261" target="_blank">防辐射服</a><a href="/search/s?cat=126" target="_blank">孕期营养</a></p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>孕产待产</dt>
+			                            <dd>
+			                            	<!--<a href="http://sc.chinaz.com/">全部</a><a href="http://sc.chinaz.com/">婴儿奶粉</a>-->
+			                                <i class="mod_subcate_line"></i>
+			                                <a href="http://www.mia.com/s/cat128_tid951.html" target="_blank"  class="org" >孕妇装/孕妇裙</a>
+			                                <a href="http://www.mia.com/s/cat348_tid957.html" target="_blank" >孕妇裤/托腹裤</a>
+			                                <a href="http://www.mia.com/s/cat127_tid950.html" target="_blank" >哺乳文胸/内裤</a>
+			                                <a href="http://www.mia.com/s/cat260_tid954.html" target="_blank"  class="org" >待产/月子用品</a>
+			                                <a href="http://www.mia.com/s/cat349_tid958.html" target="_blank" >月子服/哺乳装</a>
+			                                <a href="http://www.mia.com/s/cat229_tid953.html" target="_blank" >塑身衣/矫正带</a>
+			                                <a href="http://www.mia.com/s/cat261_tid955.html" target="_blank"  class="org" >防辐射服</a>
+			                                <a href="http://www.mia.com/s/cat350_tid959.html" target="_blank" >早孕检测</a>
+			                                <a href="http://www.mia.com/s/cat126_tid949.html" target="_blank"  class="org" >孕期营养</a>
+			                                <a href="http://www.mia.com/s/cat354_tid963.html" target="_blank" >孕妇枕/护腰枕</a>
+			                                <a href="http://www.mia.com/s/cat353_tid962.html" target="_blank"  class="org" >孕期智能/胎心仪</a>
+			                                <a href="http://www.mia.com/s/cat351_tid960.html" target="_blank" >孕妇鞋袜/月子鞋帽</a>
+			                                <a href="http://www.mia.com/s/cat352_tid961.html" target="_blank" >月子营养</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>孕期护肤</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat342_tid964.html" target="_blank" >孕期面部护理</a>
+			                                <a href="http://www.mia.com/s/cat346_tid968.html" target="_blank"  class="org">除疤祛纹</a>
+			                                <a href="http://www.mia.com/s/cat347_tid969.html" target="_blank"  class="org">乳房护理</a>
+			                                <a href="http://www.mia.com/s/cat343_tid965.html" target="_blank"  class="org">孕期身体护理</a>
+			                                <a href="http://www.mia.com/s/cat345_tid967.html" target="_blank" >孕期口腔护理</a>
+			                                <a href="http://www.mia.com/s/cat344_tid966.html" target="_blank" >孕期洗发沐浴</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>母乳喂养</dt>
+			                            <dd>
+			                           		<a href="http://www.mia.com/s/cat37_tid943.html" target="_blank"  class="org">吸奶器</a>
+			                                <a href="http://www.mia.com/s/cat40_tid946.html" target="_blank"  class="org">防溢乳垫</a>
+			                                <a href="http://www.mia.com/s/cat38_tid944.html" target="_blank"  class="org">母乳储存</a>
+			                                <a href="http://www.mia.com/s/cat42_tid948.html" target="_blank" >矫正器/配件</a>
+			                                <a href="http://www.mia.com/s/cat41_tid947.html" target="_blank" >哺乳枕</a>
+			                                <a href="http://www.mia.com/s/cat39_tid945.html" target="_blank" >催奶回奶</a>
+			                                <a href="http://www.mia.com/s/cat355_tid942.html" target="_blank" >哺乳巾</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    
+			                    
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+			           						<li><a href="http://sc.chinaz.com/"><img src="../img/1357_brand_logo_img1459491024.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1_brand_logo_img1459490969.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/157_brand_logo_img1461150832.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brands-6.jpg" /></a></li>
+			            					<li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			            
+			            <!--四-->
+			            <li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a href="#" class="hot_sub" >童装</a><a href="#" class="hot_sub" >童鞋</a><a class="hot_sub" href="">寝居</a></h2>
+			                <p class="mod_cate_r"><a href="/search/s?cat=183" target="_blank">新生儿礼盒</a><a href="/search/s?cat=228" target="_blank">连身衣/爬服</a>                                                                <a href="/search/s?cat=313" target="_blank">   &nbsp; &nbsp;T恤/POLO衫</a><a href="/search/s?cat=325" target="_blank">亲子装</a><a href="/search/s?cat=322" target="_blank">太阳镜</a></p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>婴幼儿服</dt>
+			                            <dd>
+			                            	
+			                                <i class="mod_subcate_line"></i>
+			                                <a href="http://www.mia.com/s/cat183_tid742.html" target="_blank"   class="org">新生儿礼盒</a>
+			                                <a href="http://www.mia.com/s/cat64_tid767.html" target="_blank" >婴儿内衣</a>
+			                                <a href="http://www.mia.com/s/cat228_tid743.html" target="_blank"   class="org">连身衣/爬服</a>
+			                                <a href="http://www.mia.com/s/cat310_tid750.html" target="_blank" >护脐带/肚兜</a>
+			                                <a href="http://www.mia.com/s/cat66_tid784.html" target="_blank" >罩衣/围嘴</a>
+			                                <a href="http://www.mia.com/s/cat65_tid785.html" target="_blank" >斗篷/披风</a>
+			                                <a href="http://www.mia.com/s/cat308_tid748.html" target="_blank" >手套/脚套/帽子</a>
+			                                <a href="http://www.mia.com/s/cat267_tid747.html" target="_blank" >婴儿家居</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>童装</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat71_tid820.html" target="_blank" >连衣裙/半身裙</a>
+				                            <a href="http://www.mia.com/s/cat313_tid799.html" target="_blank"  class="org">T恤/POLO衫</a>
+				                            <a href="http://www.mia.com/s/cat68_tid817.html" target="_blank" >衬衫</a>
+				                            <a href="http://www.mia.com/s/cat315_tid801.html" target="_blank" >牛仔裤</a>
+				                            <a href="http://www.mia.com/s/cat316_tid802.html" target="_blank" >休闲裤</a>
+				                            <a href="http://www.mia.com/s/cat314_tid800.html" target="_blank" >吊带/背心</a>
+				                            <a href="http://www.mia.com/s/cat317_tid803.html" target="_blank" >背带裤/连体裤</a>
+				                            <a href="http://www.mia.com/s/cat325_tid810.html" target="_blank"  class="org">亲子装</a>
+				                            <a href="http://www.mia.com/s/cat318_tid804.html" target="_blank" >套装</a>
+				                            <a href="http://www.mia.com/s/cat321_tid806.html" target="_blank" >家居服/睡衣</a>
+				                            <a href="http://www.mia.com/s/cat79_tid826.html" target="_blank" >打底裤/袜品</a>
+				                            <a href="http://www.mia.com/s/cat323_tid808.html" target="_blank" >帽子/围巾/手套</a>
+				                            <a href="http://www.mia.com/s/cat82_tid829.html" target="_blank" >泳衣/泳帽</a>
+				                            <a href="http://www.mia.com/s/cat327_tid812.html" target="_blank" >雨衣/雨具</a>
+				                            <a href="http://www.mia.com/s/cat319_tid805.html" target="_blank" >内衣/内裤</a>
+				                            <a href="http://www.mia.com/s/cat80_tid827.html" target="_blank" >配饰/发饰</a>
+				                            <a href="http://www.mia.com/s/cat322_tid807.html" target="_blank"  class="org">太阳镜</a>
+				                            <a href="http://www.mia.com/s/cat312_tid798.html" target="_blank" >风衣/外套</a>
+				                            <a href="http://www.mia.com/s/cat311_tid797.html" target="_blank" >西服/皮衣/夹克</a>
+				                            <a href="http://www.mia.com/s/cat69_tid818.html" target="_blank" >毛衣/针织衫</a>
+				                            <a href="http://www.mia.com/s/cat72_tid821.html" target="_blank" >卫衣/绒衫</a>
+				                            <a href="http://www.mia.com/s/cat67_tid816.html" target="_blank" >马甲/坎肩</a>
+				                            <a href="http://www.mia.com/s/cat73_tid831.html" target="_blank" >棉袄/棉服</a>
+				                            <a href="http://www.mia.com/s/cat324_tid830.html" target="_blank" >礼服/演出配饰</a>
+				                            <a href="http://www.mia.com/s/cat309_tid832.html" target="_blank" >羽绒服</a>
+				                            <a href="http://www.mia.com/s/cat78_tid833.html" target="_blank" >成人鞋服</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>童鞋</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat239_tid834.html" target="_blank" >学步鞋/机能鞋</a>
+			                                <a href="http://www.mia.com/s/cat240_tid835.html" target="_blank"  class="org">运动鞋</a>
+			                                <a href="http://www.mia.com/s/cat76_tid836.html" target="_blank" >休闲/帆布鞋</a>
+			                                <a href="http://www.mia.com/s/cat178_tid837.html" target="_blank" >皮鞋/公主鞋</a>
+			                                <a href="http://www.mia.com/s/cat241_tid838.html" target="_blank" >凉鞋</a>
+			                                <a href="http://www.mia.com/s/cat326_tid839.html" target="_blank" >家居鞋/拖鞋</a>
+			                                <a href="http://www.mia.com/s/cat81_tid840.html" target="_blank" >雨鞋</a>
+			                                <a href="http://www.mia.com/s/cat77_tid841.html" target="_blank" >棉鞋/雪地靴</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>宝宝寝居</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat330_tid1061.html" target="_blank" >包巾/睡袋</a>
+			                                <a href="http://www.mia.com/s/cat331_tid1062.html" target="_blank"  class="org">宝宝浴巾</a>
+			                                <a href="http://www.mia.com/s/cat332_tid1063.html" target="_blank" >婴童枕</a>
+			                                <a href="http://www.mia.com/s/cat333_tid1064.html" target="_blank" >床围/床垫/尿垫</a>
+			                                <a href="http://www.mia.com/s/cat334_tid1065.html" target="_blank" >被褥/毛毯/套件</a>
+			                                <a href="http://www.mia.com/s/cat335_tid1066.html" target="_blank"  class="org">凉席/蚊帐</a>
+			                                <a href="http://www.mia.com/s/cat337_tid1067.html" target="_blank" >宝宝床/摇椅</a>
+			                                <a href="http://www.mia.com/s/cat338_tid1068.html" target="_blank" class="org">家具收纳</a>
+			                                <a href="http://www.mia.com/s/cat339_tid1069.html" target="_blank" >安全防护</a>
+			                                <a href="http://www.mia.com/s/cat340_tid1070.html" target="_blank"  class="org">装饰小物</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	
+			                        
+			                        
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    
+			                    
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/157_brand_logo_img1461150832.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brands-6.jpg" /></a></li>
+			            					<li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/189_brand_logo_img1459857574.jpg" /></a></li>
+			           						<li><a href="http://sc.chinaz.com/"><img src="../img/1357_brand_logo_img1459491024.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/175_brand_logo_img1459857796.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			            
+			        	<!--五-->
+			            <li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a  class="hot_sub" href="#">玩具</a><a  class="hot_sub" href="#">书籍</a><a class="hot_sub" href="">出行</a></h2>
+			                <p class="mod_cate_r"><a href="/search/s?cat=87" target="_blank">牙胶/咬咬胶</a><a href="/search/s?cat=95" target="_blank">戏水/游泳装备</a><a href="/search/s?cat=109" target="_blank">安全座椅</a><a href="/search/s?cat=114" target="_blank">出行箱包</a></p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>玩具</dt>
+			                            <dd>
+			                            	
+			                                <i class="mod_subcate_line"></i>
+			                                	<a href="http://www.mia.com/s/cat164_tid842.html" target="_blank" >学步车/摇马</a>  <a href="http://www.mia.com/s/cat255_tid843.html" target="_blank"  class="org">益智</a>
+			                                    <a href="http://www.mia.com/s/cat257_tid844.html" target="_blank" >早教</a>         <a href="http://www.mia.com/s/cat258_tid845.html" target="_blank" >DIY手工</a>
+			                                    <a href="http://www.mia.com/s/cat259_tid846.html" target="_blank" >绘画工具</a>     <a href="http://www.mia.com/s/cat291_tid847.html" target="_blank" >其他</a>
+			                                    <a href="http://www.mia.com/s/cat84_tid848.html" target="_blank" >摇铃/车床挂</a>   <a href="http://www.mia.com/s/cat85_tid849.html" target="_blank"  class="org">毛绒/安抚</a>
+			                                    <a href="http://www.mia.com/s/cat86_tid850.html" target="_blank" >音乐玩具</a>      <a href="http://www.mia.com/s/cat87_tid851.html" target="_blank"  class="org"="hot">牙胶/咬咬胶</a>
+			                                    <a href="http://www.mia.com/s/cat88_tid852.html" target="_blank" >爬行垫/游戏垫</a> <a href="http://www.mia.com/s/cat89_tid853.html" target="_blank" >健身架/球类</a>
+			                                    <a href="http://www.mia.com/s/cat91_tid854.html" target="_blank" >积木/拼插</a>     <a href="http://www.mia.com/s/cat92_tid855.html" target="_blank" >模型玩具</a>
+			                                    <a href="http://www.mia.com/s/cat94_tid856.html" target="_blank" >户外运动</a>      <a href="http://www.mia.com/s/cat95_tid857.html" target="_blank"  class="org">戏水/游泳装备</a>
+			                                    <a href="http://www.mia.com/s/cat96_tid858.html" target="_blank" >挖沙玩具</a>      <a href="http://www.mia.com/s/cat97_tid859.html" target="_blank" >遥控玩具</a>
+			                                    <a href="http://www.mia.com/s/cat98_tid860.html" target="_blank" >布书</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>书籍</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat292_tid861.html" target="_blank"  class="org">中文绘本</a>
+			                                <a href="http://www.mia.com/s/cat293_tid862.html" target="_blank" >手工/玩具书</a>
+			                                <a href="http://www.mia.com/s/cat294_tid863.html" target="_blank"  class="org">有声读物</a>
+			                                <a href="http://www.mia.com/s/cat328_tid931.html" target="_blank"  class="org">原版进口</a>
+			                                <a href="http://www.mia.com/s/cat295_tid864.html" target="_blank" >卡通/动漫</a>
+			                                <a href="http://www.mia.com/s/cat296_tid865.html" target="_blank" >科普/百科</a>
+			                                <a href="http://www.mia.com/s/cat297_tid866.html" target="_blank" >儿童文学</a>
+			                                <a href="http://www.mia.com/s/cat298_tid867.html" target="_blank" >启蒙/教育</a>
+			                                <a href="http://www.mia.com/s/cat299_tid868.html" target="_blank"  class="org">孕产/育儿</a>
+			                                <a href="http://www.mia.com/s/cat300_tid869.html" target="_blank" >期刊/杂志</a>
+			                                <a href="http://www.mia.com/s/cat301_tid870.html" target="_blank" >生活休闲</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>出行装备</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat109_tid871.html" target="_blank"  class="org">安全座椅</a>
+			                                <a href="http://www.mia.com/s/cat115_tid873.html" target="_blank" >腰凳背带</a>
+			                                <a href="http://www.mia.com/s/cat114_tid872.html" target="_blank"  class="org">出行箱包</a>
+			                                <a href="http://www.mia.com/s/cat116_tid874.html" target="_blank" >出行配件</a>
+			                                <a href="http://www.mia.com/s/cat230_tid875.html" target="_blank" >电动车</a>
+			                                <a href="http://www.mia.com/s/cat233_tid876.html" target="_blank"  class="org">推车/伞车</a>
+			                                <a href="http://www.mia.com/s/cat234_tid877.html" target="_blank" >三轮车</a>
+			                                <a href="http://www.mia.com/s/cat235_tid878.html" target="_blank"  class="org">滑板车</a>
+			                                <a href="http://www.mia.com/s/cat245_tid879.html" target="_blank" >自行车</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/1032147_normal_2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1136915_normal_2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1131674_normal_2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1161064_normal_2.jpg" /></a></li>
+			           						<li><a href="http://sc.chinaz.com/"><img src="../img/1001469_normal_2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1136915_normal_2.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			            
+			        	<!--六-->
+			            <li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a class="hot_sub" href="#">美妆</a><a  class="hot_sub" href="#">个护</a><a class="hot_sub" href="#">轻奢</a></h2>
+			                <p class="mod_cate_r"><a href="/search/s?cat=175" target="_blank">防晒/隔离</a><a href="/search/s?cat=196" target="_blank">化妆水/爽肤水 </a><a href="/search/s?cat=197" target="_blank">&nbsp;&nbsp;面膜</a><a href="/search/s?cat=210" target="_blank">美体塑身</a><a href="/search/s?cat=366" target="_blank">卸妆</a><a href="/search/s?cat=368" target="_blank">眼部彩妆</a></p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>面部护肤</dt>
+			                            <dd>
+			                            	
+			                                <i class="mod_subcate_line"></i>
+			                              	<a href="http://www.mia.com/s/cat175_tid980.html" target="_blank" class="org">防晒/隔离</a>
+			                                <a href="http://www.mia.com/s/cat195_tid981.html" target="_blank" >洁面</a>
+			                                <a href="http://www.mia.com/s/cat196_tid982.html" target="_blank" class="org">化妆水/爽肤水</a>
+			                                <a href="http://www.mia.com/s/cat197_tid983.html" target="_blank" class="org">面膜</a>
+			                                <a href="http://www.mia.com/s/cat198_tid984.html" target="_blank" >乳液/面霜</a>
+			                                <a href="http://www.mia.com/s/cat199_tid985.html" target="_blank" >眼部护理</a>
+			                                <a href="http://www.mia.com/s/cat200_tid986.html" target="_blank" >唇部护理</a>
+			                                <a href="http://www.mia.com/s/cat201_tid987.html" target="_blank" class="org">套装礼盒</a>
+			                                <a href="http://www.mia.com/s/cat203_tid989.html" target="_blank" >男士护肤</a>
+			                                <a href="http://www.mia.com/s/cat371_tid990.html" target="_blank" >美容仪器/工具</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>个人护理</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat209_tid608.html" target="_blank" >手足保养</a>
+			                                <a href="http://www.mia.com/s/cat210_tid609.html" target="_blank"  class="org">美体塑身</a>
+			                                <a href="http://www.mia.com/s/cat216_tid610.html" target="_blank" >美容工具/防晒伞</a>
+			                                <a href="http://www.mia.com/s/cat134_tid614.html" target="_blank" >口腔护理</a>
+			                                <a href="http://www.mia.com/s/cat222_tid611.html" target="_blank"  class="org">洗发护发</a>
+			                                <a href="http://www.mia.com/s/cat223_tid612.html" target="_blank" >沐浴护肤</a>
+			                                <a href="http://www.mia.com/s/cat135_tid607.html" target="_blank" >私密护理</a>
+			                                <a href="http://www.mia.com/s/cat270_tid613.html" target="_blank"  class="org">卫生巾</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>彩妆</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat366_tid975.html" target="_blank"  class="org">卸妆</a>
+			                                <a href="http://www.mia.com/s/cat367_tid976.html" target="_blank" >底妆遮瑕</a>
+			                                <a href="http://www.mia.com/s/cat368_tid977.html" target="_blank"  class="org">眼部彩妆</a>
+			                                <a href="http://www.mia.com/s/cat369_tid978.html" target="_blank"  class="org">口红/唇彩</a>
+			                                <a href="http://www.mia.com/s/cat370_tid979.html" target="_blank" >香水</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>熟女轻奢</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat303_tid970.html" target="_blank" class="org">包袋</a><a href="http://www.mia.com/s/cat304_tid971.html" target="_blank" >服装</a>
+			                                <a href="http://www.mia.com/s/cat305_tid972.html" target="_blank" >墨镜</a>
+			                                <a href="http://www.mia.com/s/cat306_tid973.html" target="_blank" class="org">鞋靴</a>
+			                                <a href="http://www.mia.com/s/cat307_tid974.html" target="_blank" class="org">配饰</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    
+			                    
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/m11.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/m22.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brands-4.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo1.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo4.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo5.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo6.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo74.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			            
+			            <!--七-->
+			            <li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a  class="hot_sub" href="#">美食</a><a class="hot_sub" href="#">保健</a></h2>
+			                <p class="mod_cate_r"> <a href="/search/s?cat=171" target="_blank">休闲零食 <a href="/search/s?cat=206" target="_blank">胶原蛋白</a><a href="/search/s?cat=263" target="_blank">酵素</a><a href="/search/s?cat=264" target="_blank">&nbsp; &nbsp;蔓越莓/葡萄籽</a><a href="/search/s?cat=266" target="_blank">瘦身代餐</a></p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>休闲食品</dt>
+			                            <dd>
+			                            	
+			                                <i class="mod_subcate_line"></i>
+			                                <a href="http://www.mia.com/s/cat167_tid1045.html" target="_blank" >饼干/糕点</a>
+			                                <a href="http://www.mia.com/s/cat168_tid1046.html" target="_blank"  class="org">干果/果干</a>
+			                                <a href="http://www.mia.com/s/cat169_tid1047.html" target="_blank" >糖果/巧克力</a>
+			                                <a href="http://www.mia.com/s/cat170_tid1048.html" target="_blank" >冲调/饮品</a>
+			                                <a href="http://www.mia.com/s/cat171_tid1049.html" target="_blank"  class="org">休闲零食</a>
+			                                <a href="http://www.mia.com/s/cat184_tid1050.html" target="_blank" >面食/调味/油</a>
+			                                <a href="http://www.mia.com/s/cat357_tid1052.html" target="_blank"  class="org">地方特产</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>营养健康</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat129_tid888.html" target="_blank" >鱼油/卵磷脂</a>
+			                                <a href="http://www.mia.com/s/cat205_tid889.html" target="_blank" >钙+维生素D</a>
+			                                <a href="http://www.mia.com/s/cat206_tid890.html" target="_blank"  class="org">胶原蛋白</a>
+			                                <a href="http://www.mia.com/s/cat207_tid891.html" target="_blank" >综合维生素</a>
+			                                <a href="http://www.mia.com/s/cat263_tid893.html" target="_blank"  class="org">酵素</a>
+			                                <a href="http://www.mia.com/s/cat238_tid892.html" target="_blank" >男士保健</a>
+			                                <a href="http://www.mia.com/s/cat264_tid894.html" target="_blank"  class="org">蔓越莓/葡萄籽</a>
+			                                <a href="http://www.mia.com/s/cat265_tid895.html" target="_blank" >滋补养生</a>
+			                                <a href="http://www.mia.com/s/cat266_tid896.html" target="_blank"  class="org">瘦身代餐</a>
+			                                <a href="http://www.mia.com/s/cat271_tid897.html" target="_blank" >益生菌</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo12.png" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/5brand_logo11.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo10.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo17.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo16.png" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/brand_logo12.png" /></a></li>
+				                            
+				                            
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			            
+			            <!--八-->
+			            <li class="mod_cate">
+			            	<h2><i class="arrow_dot fr"></i><a class="hot_sub" href="#">家居</a><a class="hot_sub" href="">清洁</a></h2>
+			                <p class="mod_cate_r"><a href="/search/s?cat=118" target="_blank">奶瓶清洁</a><a href="/search/s?cat=124" target="_blank">消毒液/柔顺剂</a><a href="/search/s?cat=23" target="_blank">&nbsp; &nbsp;宝宝湿巾</a><a href="/search/s?cat=143" target="_blank">件套/被子</a><a href="/search/s?cat=372" target="_blank">家居服</a> </p>
+			                <div class="mod_subcate">
+			                	<div class="mod_subcate_main">
+			                    	<dl>
+			                        	<dt>清洁消毒</dt>
+			                            <dd>
+			                            	
+			                                <i class="mod_subcate_line"></i>
+			                                <a href="http://www.mia.com/s/cat118_tid1053.html" target="_blank" class="org" >餐具清洁</a>
+			                                <a href="http://www.mia.com/s/cat120_tid1055.html" target="_blank" >洗衣粉/皂/液</a>
+			                                <a href="http://www.mia.com/s/cat121_tid1056.html" target="_blank" >果蔬清洁</a>
+			                                <a href="http://www.mia.com/s/cat123_tid1058.html" target="_blank" >洗手液</a>
+			                                <a href="http://www.mia.com/s/cat124_tid1059.html" target="_blank"  class="org">消毒液/柔顺剂</a>
+			                                <a href="http://www.mia.com/s/cat23_tid1060.html" target="_blank"  class="org">宝宝湿巾</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	<dl>
+			                        	<dt>家居生活</dt>
+			                            <dd>
+			                            	<a href="http://www.mia.com/s/cat138_tid1023.html" target="_blank" class="org">浴巾/毛巾/拖鞋</a>
+			                                <a href="http://www.mia.com/s/cat141_tid1024.html" target="_blank" >枕头</a>
+			                                <a href="http://www.mia.com/s/cat142_tid1025.html" target="_blank" >锅具</a>
+			                                <a href="http://www.mia.com/s/cat143_tid1026.html" target="_blank" class="org">件套/被子</a>
+			                                <a href="http://www.mia.com/s/cat144_tid1027.html" target="_blank" >生活电器</a>
+			                                <a href="http://www.mia.com/s/cat145_tid1028.html" target="_blank" class="org">家庭清洁</a>
+			                                <a href="http://www.mia.com/s/cat147_tid1029.html" target="_blank" >厨房小件</a>
+			                                <a href="http://www.mia.com/s/cat151_tid1030.html" target="_blank" >居家杂件</a>
+			                                <a href="http://www.mia.com/s/cat174_tid1031.html" target="_blank" >家居纸品</a>
+			                                <a href="http://www.mia.com/s/cat190_tid1032.html" target="_blank" class="org">收纳用品</a>
+			                                <a href="http://www.mia.com/s/cat191_tid1033.html" target="_blank" >出行箱包/伞</a>
+			                                <a href="http://www.mia.com/s/cat192_tid1034.html" target="_blank" >个护电器</a>
+			                                <a href="http://www.mia.com/s/cat193_tid1035.html" target="_blank" >厨房电器</a>
+			                                <a href="http://www.mia.com/s/cat254_tid1036.html" target="_blank" >水具</a>
+			                                <a href="http://www.mia.com/s/cat372_tid1071.html" target="_blank" class="org">内衣/家居服/袜</a>
+			
+			                            </dd>
+			                        </dl>
+			                    	
+			                        
+			                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>妈妈频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="http://sc.chinaz.com/"><b>婴儿频道</b><i class="arrow_dot"></i></a></div>
+			                    </div>
+			                    <div class="mod_subcate_side">
+			                    	<div class="mod_subcate_side_hd">热门大牌</div>
+				                        <ul class="mod_subcate_side_brand clearfix">
+				                        	<li><a href="http://sc.chinaz.com/"><img src="../img/1001660_normal_2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1002107_normal_4.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1004198_normal_4.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1009958_normal_2.jpg" /></a></li>
+			           						<li><a href="http://sc.chinaz.com/"><img src="../img/1062552_normal_2.jpg" /></a></li>
+				                            <li><a href="http://sc.chinaz.com/"><img src="../img/1060617_normal_2.jpg" /></a></li>
+				                        </ul>
+			                       
+			                		</div>
+			                	</div>
+			            </li>
+			        </ul>
+			       
+			    </div>
+			</div>
+					
+		</div>
+
+
+		<!--面包屑-->
+		<div class="mianbaoxie">
+			<ol class="breadcrumb">
+			  <li><a href="#">蜜芽首页</a></li>
+			  <li><a href="#"> 奶粉专区-婴儿奶粉</a></li>
+			  <li class="active"><span>德国原装 Aptamil </span>婴儿配方奶粉pre段0~6M 800g*4罐</li>
+			</ol>
+		</div>
+
+
+
+		<!--详细信息-->
+		<div class="XQ">
+			<div class="XQ_box">
+				<!--左-->
+				<div class="XQ_left">
+					<div class="XQ_left_title">全球购</div>
+					<div class="XQ_imgbox">
+						<img  id="green_monster" src="../img/brand_21.jpg"  alt="green monster graffiti by Kotzian" data-big="../img/Aptamil.jpg"  />
+					</div>
+				</div>
+				<!--右-->
+				<div class="XQ_right">
+					<div class="r_1">
+						<img src="../img/deguo.jpg" width="20" height="10" /> <span> 德国品牌 | 保税仓发货 </span>  
+						<a href="#"> <img src="../img/weixin1.png" /> <img src="../img/xinlang1.png" /> </a>
+					</div>
+					<p> 
+						<a href="#" id="xq_introduce">德国原装Aptamil</a> 婴儿配方奶粉pre段0~6M 800g*4罐 
+						<br />
+						<span style="font-size: 14px; color: #9D9D9D; height: 40px;">婴儿配方奶粉pre段-~6M 800g*4罐 </span>
+					</p>
+					
+						<!--价格盒子-->
+					<div class="price_box">
+						<p> 售价  <span id="xq_price" class="pbox_price"> &yen;600.00 </span> &nbsp;&nbsp;<span style="text-decoration: line-through; color: #C0C0C0;">&yen;1032</span></p>
+						<p> 优惠 <i class="manjian" >满减 </i><span style="color: #FF0000; font-size: 14px;">满399减100 满798减200</span>  </p>
+					</div>
+					
+					<!--套装-->
+					<div class="taozhuang"> 
+						<span class="taozhuang_title">套装</span>
+						<div class="tz_box">
+							<ul>
+								<li>
+									<a href="#">
+										<em>4</em>件套<br />&yen;150/件
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!--可选-->
+					<div class="kexuan">
+						<span class="kexuan_title">可选</span>
+						<div class="kx_box">
+							<ul>
+								<li>
+									<img src="../img/brand_21.jpg" width="55" height="55" />
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!--数量-->
+					<div class="xq_count_box">
+						<span class="xq_count_title">数量</span>
+						<div class="xq_count">
+							<span class="xq_reduce">-</span>
+							<input type="text" id="xq_count" value="1"/>
+							<span class="xq_add">+</span>
+						</div>
+					</div>
+					
+					<!--评分-->
+					<div class="ping">
+						<span class="ping_title">评分</span>
+						<div class="ping_box"></div>
+						<span><b style="color:deeppink;">73</b>位蜜粉推荐</span>
+						
+					</div>
+					
+					<!--加入购物车按钮部分-->
+					<div class="XQ_addcar">
+						<div class="addbuycaar">
+							<p>加入购物车</p>
+						</div>
+						<div class="shoucang">
+							<img src="../img/XQ_shoucang.jpg"  />
+						</div>
+					</div>
+					<div class="XQ_word" style="margin-top: 10px;font-size: 12px;">
+						<span>编码:</span>&nbsp;&nbsp;&nbsp;<span>1204204</span>
+					</div>
+					<div class="XQ_baozheng">
+						<ul>
+							<li>本商品包邮</li>
+							<li>蜜芽自营 保税区发货</li>
+							<li>不支持14天无理由退货</li>
+						</ul>
+					</div>
+				</div>
+				<!--右结束-->
+			</div>
+		</div>
+		
+		<div id="XQ_li">
+			<ul>
+				<li><a href="#"><img src="../img/brand_21_1.jpg" /></a><br /> <br />
+					<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+					<span>¥335.00</span>
+ 				</li>
+ 				<li><a href="#"><img src="../img/brand_22_1.jpg" /></a><br /> <br />
+					<p>"德国原装 Aptamil 婴幼儿奶粉2段0~6M 蓝"</p>
+					<span>¥335.00</span>
+ 				</li>
+ 				<li><a href="#"><img src="../img/brand_21_1.jpg" /></a><br /> <br />
+					<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+					<span>¥335.00</span>
+ 				</li>
+ 				<li><a href="#"><img src="../img/brand_22_1.jpg" /></a><br /> <br />
+					<p>"德国原装 Aptamil 婴幼儿奶粉2段0~6M 蓝"</p>
+					<span>¥335.00</span>
+ 				</li>
+ 				<li><a href="#"><img src="../img/brand_21_1.jpg" /></a><br /> <br />
+					<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+					<span>¥335.00</span>
+ 				</li>
+ 				<li><a href="#"><img src="../img/brand_22_1.jpg" /></a><br /> <br />
+					<p>"德国原装 Aptamil 婴幼儿奶粉2段0~6M 蓝"</p>
+					<span>¥335.00</span>
+ 				</li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="XQ_xqbox">
+			<div class="XQ_xq">
+				<div class="XQ_xql">
+					<div class="p">看了又看</div>
+					<ul>
+						<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 					<li>
+							<a href="#"><img src="../img/brand_21_1.jpg" /></a>
+							<div class="l_p">
+								<p>"德国原装 Aptamil 婴幼儿奶粉1段0~6M 蓝"</p>
+								<span>¥335.00</span>
+							</div>
+	 					</li>
+	 				
+					</ul>
+				</div>
+				<div class="XQ_xqr">
+					<div class="r_xd">
+						<ul>
+							<li class="spxq">商品详情</li>
+							<li><a href="#"> 蜜芽圈（185）</a></li>
+							<li><a href="#">蜜芽优势</a></li>
+							<li><a href="#">问题咨询</a></li>
+						</ul>
+					</div>
+					
+					<script>
+			
+						$(function(){
+							
+							var _top =$(".r_xd").offset().top;
+							$(window).scroll(function(){
+								var scrollTop = $(document).scrollTop();
+								if(scrollTop >= _top){
+									$(".r_xd").css({"position":"fixed","top":0});
+								}else{
+									$(".r_xd").css({"position":"static"});
+								}
+								
+							});
+							
+						});
+					</script>
+								
+					
+					
+					
+					<div class="XQ_XQ">
+						<div class="xiangxi">
+							<ul>
+								<li><b>商品名称：</b><span>德国原装 Aptamil 婴儿配方奶粉pre段0~6M</span></li>
+								<li><b>品牌：</b><span class="ss">德国原装 Aptamil </span></li>
+								<li><b>分类：</b><span>婴儿奶粉</span></li>
+								<li><b>商品条码：</b></li>
+								<li><b>保质期：</b><span>18个月</span></li>
+								<li><b>净含量：</b><span class="ss">800g</span></li>
+								<li><b>适用年龄：</b><span>0~6个月</span></li>
+								<li><b>产地：</b><span class="ss">德国</span></li>
+								<li><b>包装类型：</b><span>灌装</span></li>
+								<li><b>存储方式：</b><span class="ss">干燥阴凉</span></li>
+								<li><b>段位：</b><span>Pre段</span></li>
+							</ul>
+							<div class="up_down">展开</div>
+						</div>
+						
+						<script>
+							
+								$(function(){
+									
+									//1. 获取所有品牌  除了前6个li
+									var $xq_li = $(".xiangxi li:gt(5)");
+									//2.隐藏这些li
+									$xq_li.hide();
+									$(".xiangxi").css("height","100");
+									$(".up_down").text("展开");
+									//3.获取 
+									var $morebtn = $(".up_down");
+									//点击
+									$morebtn.click(function(){
+										if($xq_li.is(":hidden")){
+											$xq_li.show();
+											$(".xiangxi").css("height","200");
+											$(".up_down").text("收起");
+										}else{
+											$xq_li.hide();
+											$(".xiangxi").css("height","100");
+											$(".up_down").text("展开");
+										}
+									})
+								});
+						</script>
+						
+						
+						
+						
+						
+						
+						
+						<!--详情图片-->
+						<div class="xq_pic">
+							<ul>
+								<li> <img src="../img/xq_8.gif" /> </li>
+								<li> <img src="../img/xq_one.jpg" /> </li>
+								<li> <img src="../img/baozhiqi.jpg" /> </li>
+								<li> <img src="../img/chanpinzhanshi.jpg" /> </li>
+								<li> <img src="../img/chanpinzhanshi2.jpg" /> </li>
+								<li> <img src="../img/xq3.jpg" /> </li>
+								<li> <img src="../img/peiliaobiao.jpg" /> </li>
+								<li> <img src="../img/chongpao.jpg" /> </li>
+								<li> <img src="../img/zhuannaifangfa.jpg" /> </li>
+								<li> <img src="../img/mamayiwen.jpg" /> </li>
+								<li> <img src="../img/nainiu.jpg" /> </li>
+								<li> <img src="../img/wenxintishi.jpg" /> </li>
+								<li> <img src="../img/gaozhishu.jpg" /> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--底部-->
+		<div id="footer">
+			
+			<!--底部的上部分-->
+			<div class="footer_top">
+				<div class="footer_top_width">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="../img/icon1.jpg" />
+								<p><b>可信赖</b></p>
+								<span>进口母婴特卖</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/icon2.jpg" />
+								<p><b>无忧</b></p>
+								<span>正品保证</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/icon3.jpg" />
+								<p><b>14天</b></p>
+								<span>无理由退货</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/icon4.jpg" />
+								<p><b>恒文仓</b></p>
+								<span>完善的货物储存</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/icon5.jpg" />
+								<p><b>24小时</b></p>
+								<span>快速发货</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/icon6.jpg" />
+								<p><b>100万</b></p>
+								<span>妈妈口碑信赖</span>
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+			
+			<!--底部  的 中间部分-->
+			<div class="footer_mid">
+				<div class="footer_mid_width">
+					<!--左-->
+					<div class="l">
+						<ul>
+							<li class="strong">使用帮助</li>
+							<li> 支付方式</li>
+							<li> 蜜粉值体系</li>
+							<li> 蜜豆体系</li>
+							<li> 正品承诺</li>
+						</ul>
+						<ul>
+							<li class="strong">支付方式</li>
+							<li> 支付流程</li>
+							<li> 蜜粉值体系</li>
+							<li> 跨境进口税</li>
+						</ul>
+						<ul>
+							<li class="strong">配送方式</li>
+							<li> 包邮政策</li>
+							<li> 发货时间</li>
+							<li> 配送区域</li>
+							<li> 验货签收</li>
+						</ul>
+						<ul>
+							<li class="strong">售后服务</li>
+							<li> 退货政策</li>
+							<li> 退货流程</li>
+							<li> 退款方式</li>
+						</ul>
+						<ul class="last_ul">
+							<li class="strong">联系方式</li>
+							<li> 总裁邮箱 ceo@mia.com</li>
+							<li> 商务合作 bd@mia.com</li>
+							<li> 媒体合作 pr@mia.com</li>
+							<li> 采购中心 cx@mia.com</li>
+							<li> 企业采购 qiye@mia.com</li>
+						</ul>
+						
+					</div>
+					<!--右-->
+					<div class="r">
+						<ul>
+							<li class="strong">关注蜜芽</li>
+							<li><img src="../img/index_fd_sj.gif" /></li>
+							<li><a href="#"> <img src="../img/index_fd_wb.gif"/> </a></li> <!--微博-->
+							<li id="ohover"><!--微信-->
+								<a href="#"> <img src="../img/index_fd_wx.gif"/> </a>
+								<div id="toopli"> <img src="../img/index_fd_wx_more.gif" /> </div>
+							</li> 
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--底-->
+			<div class="bottom">
+				<div class="bottom_width">
+					<p>
+						<a href="#">关于蜜芽</a><span>|</span>
+						<a href="#">加入蜜芽</a><span>|</span>
+						<a href="#">商务合作</a><span>|</span>
+						<a href="#">帮助中心</a><span>|</span>
+						<a href="#">联系我们</a><span>|</span>
+						<a href="#">友情链接</a><span>|</span>
+						<a href="#">触屏版</a><span>|</span>
+						<a href="#">媒体报道</a><span>|</span>
+						<a href="#">妈米计划</a>
+					</p>
+					
+					京公网安备：11010502027270 | 营业执照：91110105585582599307U | 食品经营许可证：SP1101051410296669 | 京ICP证140430号 | 京ICP备14006215号
+					<br />
+					通过本网站直接或者间接地推销商品或者服务的商业宣传活动均属“广告”
+					<br />
+					Copyright &copy; 2016 北京花旺在线商贸有限公司 Mia.com 保留一切权利。 客服热线： 400-789-2000
+					<br />
+					<p> 
+						<a href="#"> <img src="../img/bluelogo.gif" /> </a>
+						<a href="#"> <img src="../img/cnnic.png" /> </a>
+						<a href="#"> <img src="../img/chengxin.jpg" /> </a>
+						<a href="#"> <img src="../img/alipay.jpg" /> </a>
+					</p>
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		<!--左侧二维码 固定-->
+		<div id="fixeLft">
+			<img src="../img/fixedLeft.png" />
+		</div>
+		
+		
+		<!--右侧-->
+		<div id="fixeRight">
+			<ul>
+				<li> <a href="cart.html"> <img src="../img/gouwuche.jpg" /> <br />购物车</a> </li>
+				<li> <a href="#"> <img src="../img/zixun.jpg" /> <br />咨询</a> </li>
+				<li class="tel"> 
+					<a href="#"> <img src="../img/phone.jpg" /><br /> 客服</a>
+					<div id="tel"><img src="../img/tel.gif" /> </div>
+				</li>
+				<li class="weixin">
+					<a href="#"> <img src="../img/weixin.png" /> <br />微信</a>
+					<div class="weixin_1"> <img src="../img/guanzhumiya.png" /> </div>
+				</li>
+				
+				<li class="top"> <img src="../img/top.jpg"/></li>
+			</ul>
+		</div>
+		
+		
+		<!-- jQuery代码    -->
+		<script type="text/javascript">
+		
+		
+			
+			//			分类菜单     
+			$("#nav .tit").slide({
+				type:"menu",
+				titCell:".mod_cate",
+				targetCell:".mod_subcate",
+				delayTime:0,
+				triggerTime:10,
+				defaultPlay:false,
+				returnDefault:true
+			});
+			
+			//鼠标离开多级菜单  多级菜单隐藏
+			$(".tit ").mouseleave(function(){
+				$(".tit").hide(600);
+			});
+			
+		//			鼠标进入   全部商品分类  显示多级菜单
+			$(".mod_cate_hd ").mouseenter(function(){
+				$(".tit").show(600);
+			});
+			
+		
+		//获取焦点
+	
+		 var availableTags = [
+	      "火火兔",
+	      "欧舒丹",
+	      "保温杯",
+	      "触摸书",
+	      "纸尿裤",
+	      "奶瓶刷",
+	      "套装",
+	      "睡袋",
+	      "洗衣皂",
+	      "加热器",
+	      "除菌皂",
+	      "爽身粉",
+	      "奶粉",
+	      "婴儿润肤露"
+	    
+	    ];
+	    $( ".tags" ).autocomplete({
+	      source: availableTags
+	    });
+	    
+//	   购物车
+	
+	    
+	    
+	    
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
