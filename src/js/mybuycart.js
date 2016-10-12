@@ -179,6 +179,39 @@ $(document).ready(function(){
 	$(".price").html($price);
 	$(".subtotal").html($price);     //小计
 	
+	
+	
+	
+	if($(".subtotal").text()==""){
+		$("#cartTable").hide();
+		$(".foot").hide();
+		$(".Mybuycar .container").css({"color":"pink","font-size":"24px"}).html('您还没有为您可爱的宝宝挑选任何商品哦~<br />您可以去<a href="../index.html" > 首页</a> 挑选宝宝喜欢的商品');
+	}else{
+		$("#cartTable").show();
+		$(".foot").show();
+	}
+	
+	
+	
+	
+	$(".L").click(function(){
+		
+		$(".UL1").css("opacity",5)
+		$(".UL2").css("opacity",0)
+	})
+	$(".R").click(function(){
+		
+		
+		$(".UL1").css("opacity",0)
+		$(".UL2").css("opacity",5)
+	})
+	
+	
+	
+	
+	
+	
+	
 })
 
 

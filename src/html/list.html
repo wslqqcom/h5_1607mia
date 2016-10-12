@@ -742,6 +742,7 @@
 			</ul>
 		</div>
 		
+		
 		<!--/***************品牌**************************/-->
 		<div class="box">
 			<div class="bigbox">
@@ -785,8 +786,8 @@
 						<li><a href="#"><img src="../img/brand_1.jpg" /></a><div class="zhezhao">可瑞康</div></li>
 						<li><a href="#"><img src="../img/brand_2.jpg" /></a><div class="zhezhao">澳洲原装Aptamil</div></li>
 						<li><a href="#"><img src="../img/brand_3.jpg" /</a><div class="zhezhao">雅培</div></li>
-						<li><a href="#"><img src="../img/brand_4.jpg" /><div class="zhezhao">雅士利</div></li>
-						<li><a href="#"><img src="../img/brand_4.jpg" /><div class="zhezhao">雅士利</div></li>
+						<li><a href="#"><img src="../img/brand_4.jpg" /></a><div class="zhezhao">雅士利</div></li>
+						<li><a href="#"><img src="../img/brand_4.jpg" /></a><div class="zhezhao">雅士利</div></li>
 					</ul>
 				
 				</div>
@@ -804,38 +805,10 @@
 			</div>
 		</div>  <!--  .box 结束  -->
 		
-		<script>
-		
-		$(function(){
-		
-		//1. 获取所有品牌  除了前两排品牌
-		var $bigbox = $(".box li:gt(13)");
-		//2.隐藏这些品牌
-		$bigbox.hide();
-		$(".for_age").hide();
-		$(".place").hide();
-		$(".box").css("height","200");
-		//3.获取 更多 按钮
-		var $morebtn = $(".more");
-		//点击
-		$morebtn.click(function(){
-			if($bigbox.is(":hidden")){
-				$bigbox.show();
-				$(".for_age").show();
-				$(".place").show();
-				$(".box").css("height","460");
-			}else{
-				$bigbox.hide();
-				$(".for_age").hide();
-				$(".place").hide();
-				$(".box").css("height","200");
-			}
-		})
-		})		
-		</script>
 		
 		
-		<!--    排序   吸顶菜单            -->
+		<!--    排序             吸    顶    菜    单            -->
+		
 		<div id="xiding">
 			<div class="xiding_xd">
 				<span class="paixu">排序：</span>
@@ -846,29 +819,7 @@
 				<span class="gongji">共计<i>704</i>个商品</span>
 			</div>
 		</div>
-		
-		
-		<script>
-			
-			$(function(){
-				
-				var _top =$("#xiding").offset().top;
-				$(window).scroll(function(){
-					var scrollTop = $(document).scrollTop();
-					if(scrollTop >= _top){
-						$("#xiding").css({"position":"fixed","top":0});
-					}else{
-						$("#xiding").css({"position":"static"});
-					}
-					
-				});
-				
-			});
-		</script>
-		
-		
-		
-		
+  		
 	
 		<!--     商    品    列    表              -->
 		
@@ -879,58 +830,6 @@
 			</div>
 			<div id="page"></div>
 		</div>
-				
-		<script>
-			/*
-			number.toFixed(2) : 保持2位小数，自动四舍五入
-		 */
-		$(function(){
-			var $list = $('#lieBiao');
-			var $ul = $('<ul/>');
-			$.ajaxSetup({
-				url:'../js/list.json',
-				success:function(res){
-					console.log(res);
-
-					// 生成一个ul
-					$.each(res,function(idx,item){
-						var $li = $('<li/>');
-						$('<a/>').attr({href:item.url}).html('<img src="'+item.imgurl+'"/>').appendTo($li);
-						$('<p/>').addClass('title').html(item.title).appendTo($li);
-
-						// 计算折扣后的价格
-						var price = (item.price*item.off).toFixed(2)
-						$('<p/>').addClass('price').html( '<span>&yen;' + price + '</span><del>&yen;'+item.price.toFixed(2) + '</del>').appendTo($li);
-
-						$li.appendTo($ul);
-					});
-
-					$list.append($ul);
-				}
-			});
-
-			$.ajax();
-
-			// 懒加载效果
-			// 给window绑定scroll事件，当差不多滚动到底部是加载更多内容
-			$(window).on('scroll',function(){
-				// 获取滚动条滚动过的距离
-				var scrollTop = $(window).scrollTop();
-
-				// 当差不多滚动到底部是加载更多内容
-				if(scrollTop >= $(document).height() - $(window).height() - 9800){
-					$.ajax();
-				}
-			})
-
-		})
-
-		</script>
-		
-		
-		
-		
-		
 		
 		
 		

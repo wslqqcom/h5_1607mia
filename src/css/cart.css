@@ -21,16 +21,10 @@ body,html{background:snow;}
 #cart_banner .w1004 .step .current{}
 
 
-/*
-#cart_container{ width: 100%; min-height: 248px;border-bottom: 1px solid #CCCCCC;}
-#cart_container .empty{ width: 1000px; min-height: 248px; margin: 0 auto; background: #fff;}*/
 
-
-
-
-.Mybuycar{width: 100%;height:auto;margin: 0 15px;background:#FAFAFA ;}
-.Mybuycar .container{width: 1000px;height:auto;border: 2px solid #ccc;margin: 0 auto;}
-#cartTable{width: 1000px;height: auto;margin-bottom: 15px;}
+.Mybuycar{width: 100%; min-height: 200px;margin: 0 15px;background:#FAFAFA ;}
+.Mybuycar .container{width: 1000px;min-height: 200px;border: 2px solid #ccc;margin: 0 auto;}
+#cartTable{width: 1000px;min-height: 200px;margin-bottom: 15px;}
 #cartTable img{width: 80px;height: 80px;margin-top: 10px; float: left; }
 #cartTable span{line-height: 20px; color: #333333;}
 #cartTable th{min-width: 120px;height: 60px;line-height: 35px;background: pink;text-align: center; font-weight: 18px;}
@@ -47,5 +41,19 @@ body,html{background:snow;}
 .foot{width:1000px;height: 60px;line-height: 60px;text-align: center; color: #000;}
 .foot .foot_tab{width: 1000px;background:  pink}
 #priceTotal{color: red;}
-#selectedTotal{color: red;font-weight: bolder;}
+#selectedTotal{color: red;font-weight: bolder; }
 
+/*猜你喜欢*/
+.like{width: 100%; height: 300px; margin-top: 20px;}
+.like .likes{color: deeppink; font-size: 16px;line-height: 30px; margin-left: 10px;}
+#XQ_li{ width: 1000px; height:260px ; font-size: 10px; margin: 0 auto; position: relative;}
+#XQ_li .L{ position: absolute; left: 0; top: 35%; font-size: 50px; color: #E5E5E5;  cursor: pointer;}
+#XQ_li .R{position: absolute; right:-30px; top: 35%;  font-size: 50px; color: #E5E5E5; cursor: pointer;}
+#XQ_li ul{ width: 900px; height: 210px; margin: 0 60px; margin-top: 20px; position: absolute; }
+#XQ_li ul li{ width: 120px; height: 210px; float: left; margin: 0 15px;}
+#XQ_li ul li p:hover{color: deeppink;}
+#XQ_li ul li img{width: 110px; height: 120px; border: 1px solid #CCCCCC; padding: 9px;}
+#XQ_li ul li span{color: red;}
+
+#XQ_li .UL2{opacity: 0; cursor: pointer;}
+#XQ_li .UL1{opacity: 5; cursor: pointer;}

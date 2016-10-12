@@ -1,9 +1,10 @@
-         /*轮播图*/
+
+ /**************** 轮 播 图 ********************/
 .lbt{width：1366px;height: 480px;margin: 0 auto;}
 .lbt img{width:100%; height: 480px;}
 .lbt ul{width:100%;height: 480px;margin: 0 auto;}
 
-/*热卖品牌*/      
+/****************** 热  卖  品  牌   ***********************/      
 #brand{width: 100%;/*height:33734px;*/background: #F9F9F9;} 
 #brands{width: 900px;height: 105px;line-height:105px;margin:10px 0 0 240px; float: right;background: #fff;}
 #brand .brands {float: left;}
@@ -16,7 +17,7 @@
 #brand .mod h3{width: 1100px; height: 36px; font-size24px; color: #222; font-weight: bolder;}
 #brand .mod h3 span{font-size:14px;margin-left:20px;color: #9D9D9D;}
 
-       /*为你推荐*/
+/************  为    你     推    荐     **********************/
 ul{list-style:none;padding:0;margin:0;}
 #datalist{width: 1100px;height: 682px; margin: 0 auto;background: #fff;}
 #datalist ul{overflow:hidden;font-size:14px;}
@@ -32,13 +33,13 @@ ul{list-style:none;padding:0;margin:0;}
 #datalist ul li p{line-height:18px;}
 
 
-/*今日特卖*/
+/**************  今  日  特  卖    **************/
 #brand .mod1{ width: 1100px; height: 40px;margin:0 auto;clear: both; }
 #brand .mod1 h3{width: 1100px; height: 36px; font-size24px; color: #222; font-weight: bolder;}
 #brand .mod1 h3 span{font-size:14px;margin-left:20px;color: #C0C0C0;}
 
 
-/*今日特卖下的块*/
+/*********  今   日   特   卖   下   的   block   ****************/
 #brand .layout{width: 1100px; height: 32300px;margin: 0 auto;}
 #brand .layout .block{width: 1100px; height: 364px;float: left;background:#FFF; border: 1px solid #CCCCCC;margin-top: 20px;}
 #brand .layout .block .bigpic{float: left;padding:7px 0 0 7px;}  /*左边大图片*/

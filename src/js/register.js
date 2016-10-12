@@ -90,7 +90,7 @@ $(document).ready(function(){
       		}
       	}
     	
-        if($(this).val().length ==11 && $(this).val()!=''){
+        if($(this).val().length =/^1[34578]\d{9}$/ && $(this).val()!=''){
             $(this).next().text('输入成功').removeClass('state1').addClass('state4');
             ok3=true;
         }else{

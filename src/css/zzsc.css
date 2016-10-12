@@ -66,8 +66,8 @@ a:hover{text-decoration:none;cursor: pointer;}
 /*Ʒ��*/
 .mod_subcate_side_hd{height:30px;line-height:30px;padding-left:4px;color:#333333;font-size:14px;font-family:"Microsoft", Arial;}
 .mod_subcate_side_brand{margin:5px 0 10px 4px;}
-.mod_subcate_side_brand li{border:1px deeppink solid;margin:-1px 0 0 -1px;position:relative;float:left;}
-
+.mod_subcate_side_brand li{margin:-1px 0 0 -1px;position:relative;float:left;transition: 0.5;}
+.mod_subcate_side_brand li:hover{transform: scale(1.2);-webkit-transform: scale(1.2)}
 /*���Ż*/
 .mod_subcate_side_hotlist{margin-left:4px;}
 .mod_subcate_side_hotlist li{height:20px;font-size:12px;color:#666666;overflow:hidden;}
