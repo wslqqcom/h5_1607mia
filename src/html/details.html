@@ -13,6 +13,7 @@
 		<script src="../assets/jquery_cookie.js"></script>
 		<script src="../js/jquery.fly.min.js"></script>
 		<script src="../js/details.js"></script>
+		<script src="../js/addbuycar.js"></script>
 		<!--<script src="../js/mybuycart.js"></script>-->
 		<link type="text/css" rel="stylesheet" href="../assets/bootstrap.min.css" />
 		<link type="text/css" rel="stylesheet" href="../assets/jquery-ui.min.css" />
@@ -88,6 +89,7 @@
 								<span><img src="../css/img/car.jpg" height="30" style="margin-top: -6px;"/></span>
 								购物车
 							</a>
+							<span class="carcount">0</span>
 						</div>
 						<div id="msg">已成功加入购物车！</div>
 					</div>
@@ -794,7 +796,7 @@
 					
 						<!--价格盒子-->
 					<div class="price_box">
-						<p> 售价  <span id="xq_price" class="pbox_price"> &yen;600.00 </span> &nbsp;&nbsp;<span style="text-decoration: line-through; color: #C0C0C0;">&yen;1032</span></p>
+						<p> 售价  <span id="xq_price" class="pbox_price"> 600.00 </span> &nbsp;&nbsp;<span style="text-decoration: line-through; color: #C0C0C0;">&yen;1032</span></p>
 						<p> 优惠 <i class="manjian" >满减 </i><span style="color: #FF0000; font-size: 14px;">满399减100 满798减200</span>  </p>
 					</div>
 					
@@ -864,7 +866,7 @@
 					
 					<!--加入购物车按钮部分-->
 					<div class="XQ_addcar">
-						<div class="addbuycaar button orange addcar">
+						<div id="ADD" class="addbuycaar button orange addcar">
 							<p>加入购物车</p>
 						</div>
 						<div class="shoucang">
@@ -1320,7 +1322,7 @@
 		<!--右侧-->
 		<div id="fixeRight">
 			<ul>
-				<li> <a href="cart.html"> <img src="../img/gouwuche.jpg" /> <br />购物车</a> </li>
+				<li id="count_car"> <a href="cart.html"> <img src="../img/gouwuche.jpg" /> <br />购物车</a> <span class="right_carcount">0</span></li>
 				<li> <a href="#"> <img src="../img/zixun.jpg" /> <br />咨询</a> </li>
 				<li class="tel"> 
 					<a href="#"> <img src="../img/phone.jpg" /><br /> 客服</a>

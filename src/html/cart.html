@@ -7,6 +7,7 @@
 		<script src="../js/jquery-1.12.0.js"></script>
 		<script src="../assets/jquery_cookie.js"></script>
 		<script src="../js/mybuycart.js"></script>
+		<script src="../js/addbuycar.js"></script>
 		<link type="text/css" rel="stylesheet" href="../css/cart.css" />
 		<link type="text/css" rel="stylesheet" href="../css/common.css" />
 		
@@ -62,23 +63,7 @@
 							<th>操作</th>
 						</tr>						
 					</thead>
-					<tbody>
-						<tr>
-							<td class="checkbox"><input class="check-one check" type="checkbox"></td>
-							<td class="goods"><!--<img src="../img/brand_21.jpg" /><span>德国原装Aptamil  婴儿配方奶粉pre段0~6M 800g*4罐 </span>--></td>
-							<td class="price"><!--600.00--></td>
-							<td class="count">
-								<span class="reduce">-</span>
-								<input class="count-input" type="text" value="1" />
-								<span class="add">+</span>
-							</td>
-							<td class="subtotal"><!--600.00--></td>
-							<td class="operation"><span class="delete">删除</span></td>
-						
-						</tr>
-						
-						
-					</tbody>
+					<tbody id="first_tbody"></tbody>
 				</table>
 				
 				
@@ -343,7 +328,7 @@
 		<!--右侧-->
 		<div id="fixeRight">
 			<ul>
-				<li> <a href="#"> <img src="../img/gouwuche.jpg" /> <br />购物车</a> </li>
+				<li id="count_car"> <a href="html/cart.html"> <img src="../img/gouwuche.jpg" /> <br />购物车</a> <span class="right_carcount">0</span></li>
 				<li> <a href="#"> <img src="../img/zixun.jpg" /> <br />咨询</a> </li>
 				<li class="tel"> 
 					<a href="#"> <img src="../img/phone.jpg" /><br /> 客服</a>

@@ -176,12 +176,46 @@ $(document).ready(function(){
 
 				// 计算折扣后的价格
 				var price = (item.price*item.off).toFixed(2)
-				$('<p/>').addClass('price').html( '<span>&yen;' + price + '</span><del>&yen;'+item.price.toFixed(2) + '</del>').appendTo($li);
-
+//				$('<p/>').addClass('price').html( '<span>&yen;' + price + '</span><del>&yen;'+item.price.toFixed(2) + '</del>').appendTo($li);
+$('<p/>').addClass('price').html( '<span>' + price + '</span><del>'+item.price.toFixed(2) + '</del>').appendTo($li);
 				$li.appendTo($ul);
 			});
 
 			$list.append($ul);
+			
+			//我写的
+			
+			var arr1=[];
+			var arr2=[];
+			var arr3=[];
+			var k=0;
+			$("#lieBiao ul li").click(function(){
+				k++
+				$(".carcount").html(k)
+				$(".right_carcount").html(k)
+				var img=$(this).children("a").html();
+				var news=$(this).children(".title").text();
+				var price=$(this).find("span").text();
+				arr1.push(img);
+				arr2.push(news);
+				arr3.push(price);
+				$.cookie("img",arr1);
+				$.cookie("news",arr2);
+				$.cookie("price",arr3);
+				console.log($.cookie("price"))
+				console.log($.cookie("news"))
+				console.log($.cookie("img"))
+				
+			})
+			    
+			
+			
+			
+			
+			
+			
+			
+			
 		}
 	});
 

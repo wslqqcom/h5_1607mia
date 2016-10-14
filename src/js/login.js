@@ -37,8 +37,8 @@ $(document).ready(function(){
 	        	{
 	        		
 	        		alert("登陆成功")
-	        		 $('#dl_form').submit()
-	        		
+	        		$('#dl_form').submit()
+	        		$("#yijingdenglu").html()
 	        		
 	        	}
 	        else{

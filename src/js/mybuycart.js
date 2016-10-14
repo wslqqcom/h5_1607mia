@@ -163,33 +163,7 @@ window.onload=function()
 
 
 $(document).ready(function(){
-	$(".addbuycaar").click(function(){
-		$.cookie("one","../img/brand_21.jpg");
-		$.cookie("details","德国原装Aptamil 婴儿配方奶粉pre段0~6M 800g*4罐 ");
-		$.cookie("price","600");
-	});
-	var $one = $.cookie("one");
-	var $details = $.cookie("details");
-	var $price = $.cookie("price");
 	
-	$(".goods").html('<img src="'+$one+'"/>');//图片路径
-	var $span=$("<span/>").html($details);  //商品信息
-	$span.appendTo(".goods");
-	
-	$(".price").html($price);
-	$(".subtotal").html($price);     //小计
-	
-	
-	
-	
-	if($(".subtotal").text()==""){
-		$("#cartTable").hide();
-		$(".foot").hide();
-		$(".Mybuycar .container").css({"color":"pink","font-size":"24px"}).html('您还没有为您可爱的宝宝挑选任何商品哦~<br />您可以去<a href="../index.html" > 首页</a> 挑选宝宝喜欢的商品');
-	}else{
-		$("#cartTable").show();
-		$(".foot").show();
-	}
 	
 	
 	
@@ -205,13 +179,50 @@ $(document).ready(function(){
 		$(".UL1").css("opacity",0)
 		$(".UL2").css("opacity",5)
 	})
-	
-	
-	
-	
-	
-	
-	
+	//获取详情页的cookie
+	var _price=$.cookie("_price")
+	var _news=$.cookie("_news")
+	var _img=$.cookie("_img")
+	var _count=$.cookie("_count")
+//	console.log(_price);
+	var Arr1=_price.split(",");
+	var Arr2=_news.split(",");
+	var Arr3=_img.split(",");
+	var Arr4=_count.split(",");
+	console.log(Arr1);
+	console.log(Arr2);
+	console.log(Arr3);
+	console.log(Arr4);
+	for(var i=0;i<Arr1.length;i++)
+ 	{
+		var tr=$("<tr/>")
+	 	var td1=$("<td class='checkbox'></td>")
+	 	var input1=$("<input class='check-one check' type='checkbox' />")
+	 	input1.appendTo(td1)
+	 	var td2=$("<td class='goods'></td>").html("<img src='"+Arr3[i]+"'/>")
+	 	var span2=$("<span/>").html(Arr2[i])
+	 	span2.appendTo(td2)
+	 	var td3=$("<td class='price'></td>").html(Arr1[i])
+	 	var td4=$("<td class='count'></td>")
+	 	var span4=$("<span class='reduce'></span>").html("-")
+	 	var input2=$("<input class='count-input' type='text' value='1' />").val(Arr4[i])
+	 	var span5=$("<span class='add'></span>").html("+")
+	 	span4.appendTo(td4)
+	 	input2.appendTo(td4)
+	 	span5.appendTo(td4)
+	 	var td5=$("<td class='subtotal'></td>").html(Arr1[i]*Arr4[i])
+	 	var td6=$("<td class='operation'></td>")
+	 	var span6=$("<span class='delete'>").html("删除")
+	 	span6.appendTo(td6)
+	 	td1.appendTo(tr)
+	 	td2.appendTo(tr)
+	 	td3.appendTo(tr)
+	 	td4.appendTo(tr)
+	 	td5.appendTo(tr)
+	 	td6.appendTo(tr)
+	 	tr.appendTo("#first_tbody")
+	 	
+	}
 })
 
 

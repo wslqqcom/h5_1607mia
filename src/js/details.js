@@ -177,7 +177,32 @@ $(document).ready(function(){
 		});
 	});
 
-	
+
+
+	var Arr1=[];
+	var Arr2=[];
+	var Arr3=[];
+	var Arr4=[];
+	$("#ADD").click(function(){
+		var _price=$(this).parent().siblings(".price_box").find(".pbox_price").text();
+		var _img=$(this).closest(".XQ_right").siblings(".XQ_left").find("img").attr("src");
+		var _news=$(this).parent().siblings("p").find("#xq_introduce").text();
+		var _count=$(this).parent().siblings(".xq_count_box").find("#xq_count").val();
+		
+		Arr1.push(_price)
+		Arr2.push(_img)
+		Arr3.push(_news)
+		Arr4.push(_count)
+		
+		$.cookie("_price",Arr1)
+		$.cookie("_img",Arr2)
+		$.cookie("_news",Arr3)
+		$.cookie("_count",Arr4)
+		console.log($.cookie("_price"))
+		console.log($.cookie("_img"))
+		console.log($.cookie("_news"))
+		console.log($.cookie("_count"))
+	})
 	
 	
 })
